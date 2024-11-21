@@ -18,18 +18,25 @@ public class ClassStart5 {
 
         Student [] students = {Student1, Student2};
 
-        System.out.println(Student1.name);
-        students[0].name = "학생입니다.";
-        System.out.println(students[0].name);
-        System.out.println(" ================== ");
-        System.out.println(Student1.name);
+//        System.out.println(Student1.name);
+//        students[0].name = "학생입니다.";
+//        System.out.println(students[0].name);
+//        System.out.println(" ================== ");
+//        System.out.println(Student1.name);
 
 
-        //        for (int i = 0; i < students.length; i++) {
+//                for (int i = 0; i < students.length; i++) {
 //        System.out.println(" 이름 : " + students[i].name + " 나이 : " + students[i].age + " 성적 : " + students[i].score);
 //        }
 
+        for (int i = 0; i < students.length ; i++) {
+            Student s = students[i];
+        System.out.println(" 이름 : " + students[i].name + " 나이 : " + students[i].age + " 성적 : " + students[i].score);
+        }
 
+        for (Student student : students) {
+            System.out.println(" 이름 : " + student .name + " 나이 : " + student .age + " 성적 : " + student .score);
+        }
 
     }
 }
