@@ -5,26 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d2a71b03-3e0c-49e5-a2d9-b619a03756e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/BigData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/Check_variable_value.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/InitData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/Method1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/Method2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/MethodChange1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/MethodChange2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/NullMain1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/NullMain2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/NullMain3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/VarChange1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/VarChange2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/basic/src/ref/initMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/코딩 테스트/.idea/코딩 테스트.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/AccountMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/MusicPlayerMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/ProducrMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/RectangleMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/StudentMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/Track.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/antArmyCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/antArmyCount_review1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_2411282_241129/rock_paper_scissors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_241129/pro_array1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_241129/pro_array2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/basic/src/Exam_241129/pro_array3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/기본.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/기본.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/기본/ref/NullMain3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/기본/ref/NullMain3.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,43 +54,48 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Check_variable_value.executor": "Run",
-    "Application.Method1.executor": "Run",
-    "Application.Method2.executor": "Run",
-    "Application.MethodChange1.executor": "Run",
-    "Application.MethodChange2.executor": "Run",
-    "Application.NullMain1.executor": "Run",
-    "Application.NullMain2.executor": "Run",
-    "Application.NullMain3.executor": "Run",
-    "Application.VarChange1.executor": "Run",
-    "Application.VarChange2.executor": "Run",
-    "Application.initMain.executor": "Run",
-    "Application.tests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/LINE/OneDrive/바탕 화면/교육/백엔드/[리마인드][백] 소스 코드/java/인프런",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Check_variable_value.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Method1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Method2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProducrMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VarChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VarChange2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.initMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/LINE/OneDrive/바탕 화면/교육/백엔드/[리마인드][백] 소스 코드/java/인프런&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="ref" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.NullMain3">
-    <configuration name="Method2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ref.Method2" />
+  <component name="RunManager" selected="Application.AccountMain">
+    <configuration name="AccountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.AccountMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ref.*" />
+          <option name="PATTERN" value="Exam_2411282_241129.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +103,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NullMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ref.NullMain1" />
+    <configuration name="MusicPlayerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.MusicPlayerMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ref.*" />
+          <option name="PATTERN" value="Exam_2411282_241129.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,12 +116,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NullMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ref.NullMain2" />
+    <configuration name="ProducrMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.ProducrMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ref.*" />
+          <option name="PATTERN" value="Exam_2411282_241129.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -126,12 +129,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NullMain3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ref.NullMain3" />
+    <configuration name="RectangleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.RectangleMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ref.*" />
+          <option name="PATTERN" value="Exam_2411282_241129.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +142,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="initMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ref.initMain" />
+    <configuration name="StudentMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.StudentMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ref.*" />
+          <option name="PATTERN" value="Exam_2411282_241129.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -154,11 +157,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NullMain3" />
-        <item itemvalue="Application.initMain" />
-        <item itemvalue="Application.NullMain2" />
-        <item itemvalue="Application.NullMain1" />
-        <item itemvalue="Application.Method2" />
+        <item itemvalue="Application.AccountMain" />
+        <item itemvalue="Application.ProducrMain" />
+        <item itemvalue="Application.StudentMain" />
+        <item itemvalue="Application.RectangleMain" />
+        <item itemvalue="Application.MusicPlayerMain" />
       </list>
     </recent_temporary>
   </component>
