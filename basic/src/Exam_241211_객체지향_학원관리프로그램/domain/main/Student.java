@@ -65,12 +65,16 @@ public class Student {
 //    강좌명과 강좌 정보를 배열에 추가하면 될거 같다.
 //    코스 객체를 이용하여 정보를 추가하면 될거 같다.
 //    입력 값에따라 수행 작업을 달리하며, 취소를 선택하면 해당 값에 대해 삭제 및 배열 내 재정렬하면 될거같다.
-public void CourseRegistration(){
-    System.out.println("== 강좌 등록 == ");
+
+//    값 세팅 메서드, 츨력 메서드 있어야함 => 등록 안에서 다 하기엔 코드 양이 너무 많고, 해당 메서드가 너무 많은 기능과 책임을 담당하게 된다.
+    public void CourseRegistration(){
+//    System.out.println("== 강좌 등록 == ");
     this.course.setCourseName("JAVA 기초반");
     this.course.setCoursePrice(500000);
     this.course.setCourseMaxStudent(5);
     this.course.setCourseDay("월/수/금");
+    this.course.setCourseTime("09:00~11:00");
+
 }
 
 //    수강 내역 조회
