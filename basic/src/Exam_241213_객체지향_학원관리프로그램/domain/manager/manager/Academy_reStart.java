@@ -1,21 +1,11 @@
 //강좌 및 수강생 삭제 메서드까지 구현하기
 
-//객체 찾기
-//
-//
 //배열 순회 시 찾고자 하는 객체를 발견하면 break로 빠져나오기
 //찾은 객체는 따로 변수에 저장해두면 나중에 사용하기 편함
 //
-//
+
 //중첩 반복문 처리
-//
-//
-//가장 바깥쪽 반복문에서 찾고자 하는 주체(학생)를 찾고
-//그 다음 반복문에서 세부 내용(수강 목록 등) 처리하기
-//네, 아주 좋은 접근 방식입니다!
-//
-//지금까지 작업하면서 중요하게 봐야 할 부분들을 정리해보면:
-//
+
 //1. 메서드 구조화
 //- 단계별 구현의 중요성
 //- 각 단계의 명확한 책임
@@ -36,7 +26,10 @@
 //- 상태 변수 업데이트 시점
 //- 메시지 처리 시점
 //
-//이러한 포인트들을 염두에 두고 다음 메서드를 설계하시면 좋을 것 같습니다. 정리가 끝나시면 말씀해 주세요!
+// 단일 책임 원칙
+//하나의 메서드는 하나의 책임만 가져야 함
+//각 로직을 분리하면 유지보수가 쉬워짐
+//코드 재사용성이 높아짐
 
 package Exam_241213_객체지향_학원관리프로그램.domain.manager.manager;
 
@@ -231,6 +224,158 @@ public class Academy_reStart {
         }
         return taskCheck;
     }
+
+    // =================================
+//    현재 수강중인 강좌 조회
+    public void currentCourseFind(String studentId) {
+        boolean isTaskCheck = false;
+        // 1단계: 기본 유효성 검사
+        // - 학생 목록이 비어있는지 확인
+
+//  나의 풀이 : 제일 간단한 카운트를 이용해 검사한다.
+        if (studentCount <= 0) {
+            System.out.println("등록된 학생이 없습니다.");
+            return;
+        }
+        // - studentId가 유효한지 확인
+
+//  나의 풀이 : 입력값이 문자열이므로 널이 아닌지 확인한다.
+        if (studentId == null) {
+            System.out.println("입력하신 아이디가 없거나, 유효하지 않습니다.");
+            return;
+        }
+
+//    -----------------------
+        // 2단계: 학생 찾기
+
+        // - studentId로 해당 학생 객체 찾기
+//    스튜던트 아이디값을 만들어서 값 저장하여 활용하기.
+        boolean hasAnyCourse = false;
+        Student targetStudent = null;
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                // 3단계: 수강 내역 확인
+                // - 학생의 수강 중인 강좌 목록 확인
+                targetStudent = student;
+                hasAnyCourse = true;
+            }
+        }
+        if (targetStudent == null) {
+            // - 수강 중인 강좌가 없는 경우 처리
+            System.out.println("일치하는 학생이 없습니다.");
+        } else {
+            //    -----------------------
+            // 4단계: 수강 내역 출력
+            // - 각 강좌의 정보 출력
+            for (Course course : targetStudent.getCurrentCourseList()) {
+                if (course != null) {
+                    course.printCourseInfo();
+                    isTaskCheck = true;
+                }
+            }
+            // - 총 수강료 정보 출력
+            System.out.println("총 수강료 " + targetStudent.getTotalPrice() + " 원 입니다.");
+        }
+
+
+        // - 없으면 메시지 출력 후 종료
+        if (isTaskCheck && hasAnyCourse) {
+            System.out.println("수강중인 강좌 정보 출력이 완료되었습니다.");
+        } else {
+            System.out.println("수강중인 강좌 정보 및 학생 검색에 실패하였습니다.");
+            return;
+        }
+//    -----------------------
+    }
+
+//    수강 신청
+    public boolean applicationForClasses(String studentId, String courseId) {
+        boolean isTaskCheck = false;
+        // 1단계: 기본 유효성 검사
+        // - 입력값 검증
+        if (studentId == null || courseId == null) {
+            System.out.println("입력값이 유효하지 않습니다.");
+            return false;
+            // - 학생/강좌 목록 존재 여부 확인
+        } else if (courseCount <= 0) {
+            System.out.println("강좌가 없어 등록이 불가합니다.");
+            return false;
+        }
+
+        // 2단계: 학생과 강좌 찾기
+        // - studentId로 학생 찾기
+        boolean isStudentCheck = false;
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                isStudentCheck = true;
+                break;
+            }
+        }
+        // - courseId로 강좌 찾기
+        boolean isCourseCheck = false;
+        for (Course course : courseList) {
+            if (course.getCourseId().equals(courseId)) {
+                isCourseCheck = true;
+                break;
+            }
+        }
+        // - 둘 중 하나라도 없으면 종료
+        if (!isCourseCheck || !isStudentCheck) {
+            return false;
+        }
+
+        // 3단계: 수강 가능 여부 확인
+        // - 강좌 정원 확인
+        int targetCourseMax = 0;
+        int targetCourseCurrent = 0;
+        for (Course course : courseList) {
+//            하단의 이프는 조건문 통과한 값을 저장하는 조건문
+            if (course.getCourseId().equals(courseId)) {
+                targetCourseMax = course.getMaxCourseStudent();
+                targetCourseCurrent = course.getCurrentCourseStudent();
+            }
+//            하단의 이프는 해당 값들의 비교 담당
+                if (targetCourseCurrent >= targetCourseMax) {
+                    return false;
+                }
+        }
+        // - 중복 수강 확인
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                if (student.getCurrentCourseList().equals(studentId)) {
+                    System.out.println("이미 해당 강좌를 수강중입니다.");
+                    return false;
+                }
+            }
+        }
+        // - 학생의 수강 가능 강좌 수 확인
+        int currentCourseCount = 0;
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                if (student.getCurrentCourseList() == null) {
+                currentCourseCount++;
+                }
+            }
+        }
+        System.out.println("현재 수강 가능 강좌 수는 " + currentCourseCount + " 강좌 입니다.");
+
+        // 4단계: 수강 신청 처리
+        // - 학생의 수강 목록에 강좌 추가
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                for (Course currentCourse : student.getCurrentCourseList()) {
+                    if (currentCourse == null) {
+//                    스튜던트 클래스에 강좌 추가하는 메서드 필요
+                    }
+                }
+            }
+        }
+        // - 강좌의 수강인원 증가
+        // - 학생의 수강료 업데이트
+    
+        // 5단계: 결과 반환
+    }
+
 
     //     ===============================
     public boolean removeFromArray(Object[] array, int count, String objectId) {
