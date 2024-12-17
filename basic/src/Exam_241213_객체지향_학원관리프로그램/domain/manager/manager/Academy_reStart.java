@@ -1,3 +1,6 @@
+//반복문
+//포이치문은 배열의 값을 복사하며 순회하기 때문에, 원본배열의 값이 변경되지 않지만, 일반 포문은 변경 가능하다.
+
 //강좌 및 수강생 삭제 메서드까지 구현하기
 
 //배열 순회 시 찾고자 하는 객체를 발견하면 break로 빠져나오기
@@ -274,7 +277,7 @@ public class Academy_reStart {
                 }
             }
             // - 총 수강료 정보 출력
-            System.out.println("총 수강료 " + targetStudent.getTotalPrice() + " 원 입니다.");
+            System.out.println("총 수강료 " + targetStudent.calculateTotalPrice() + " 원 입니다.");
         }
 
 
@@ -288,9 +291,17 @@ public class Academy_reStart {
 //    -----------------------
     }
 
-//    수강 신청
+//    24.12.17
+    //    수강 신청
     public boolean applicationForClasses(String studentId, String courseId) {
+//수강 가능 여부 확인 (개수, 중복, 정원)
+//학생의 수강 목록에 강좌 추가
+//강좌의 수강인원 증가
+//수강료 계산
+//결과 반환
         boolean isTaskCheck = false;
+        int targetCourseMax = 0;
+        int targetCourseCurrent = 0;
         // 1단계: 기본 유효성 검사
         // - 입력값 검증
         if (studentId == null || courseId == null) {
@@ -302,19 +313,27 @@ public class Academy_reStart {
             return false;
         }
 
+//        학생과 강좌 존재 확인 (현재 구현됨)
         // 2단계: 학생과 강좌 찾기
         // - studentId로 학생 찾기
         boolean isStudentCheck = false;
+        Student targetStudent = null;
         for (Student student : studentsList) {
             if (student.getStudentId().equals(studentId)) {
+                targetStudent = student;
                 isStudentCheck = true;
                 break;
             }
         }
+//대상 강좌 찾기 (Academy의 courseList에서)
         // - courseId로 강좌 찾기
         boolean isCourseCheck = false;
+        Course targetCourse = null;
         for (Course course : courseList) {
             if (course.getCourseId().equals(courseId)) {
+                targetCourse = course;
+                targetCourseMax = course.getMaxCourseStudent();
+                targetCourseCurrent = course.getCurrentCourseStudent();
                 isCourseCheck = true;
                 break;
             }
@@ -326,56 +345,131 @@ public class Academy_reStart {
 
         // 3단계: 수강 가능 여부 확인
         // - 강좌 정원 확인
-        int targetCourseMax = 0;
-        int targetCourseCurrent = 0;
-        for (Course course : courseList) {
-//            하단의 이프는 조건문 통과한 값을 저장하는 조건문
-            if (course.getCourseId().equals(courseId)) {
-                targetCourseMax = course.getMaxCourseStudent();
-                targetCourseCurrent = course.getCurrentCourseStudent();
-            }
 //            하단의 이프는 해당 값들의 비교 담당
-                if (targetCourseCurrent >= targetCourseMax) {
-                    return false;
-                }
+        if (targetCourseCurrent >= targetCourseMax) {
+            return false;
         }
+
         // - 중복 수강 확인
-        for (Student student : studentsList) {
-            if (student.getStudentId().equals(studentId)) {
-                if (student.getCurrentCourseList().equals(studentId)) {
-                    System.out.println("이미 해당 강좌를 수강중입니다.");
-                    return false;
-                }
+        for (Course course : targetStudent.getCurrentCourseList()) {
+            if (course != null && course.getCourseId().equals(courseId)) {
+                System.out.println("이미 해당 강좌를 수강중입니다.");
+                return false;
             }
         }
+
         // - 학생의 수강 가능 강좌 수 확인
         int currentCourseCount = 0;
-        for (Student student : studentsList) {
-            if (student.getStudentId().equals(studentId)) {
-                if (student.getCurrentCourseList() == null) {
+        for (Course course : targetStudent.getCurrentCourseList()) {
+            if (course != null) {
                 currentCourseCount++;
-                }
             }
         }
-        System.out.println("현재 수강 가능 강좌 수는 " + currentCourseCount + " 강좌 입니다.");
+
+        if (currentCourseCount >= targetCourseMax) {
+            System.out.println("수강 가능한 강좌 수를 초과하였습니다.");
+            return false;
+        }
+        System.out.println("현재 수강 가능 강좌 수는 " + (targetCourseMax - currentCourseCount) + " 강좌 입니다.");
 
         // 4단계: 수강 신청 처리
         // - 학생의 수강 목록에 강좌 추가
-        for (Student student : studentsList) {
-            if (student.getStudentId().equals(studentId)) {
-                for (Course currentCourse : student.getCurrentCourseList()) {
-                    if (currentCourse == null) {
+//        불필요한 체크와 적절한 값 전달
+        if (targetCourse != null) {
 //                    스튜던트 클래스에 강좌 추가하는 메서드 필요
-                    }
-                }
-            }
+            targetStudent.addCourse(targetCourse);
+            currentCourseCount++;
+            isTaskCheck = true;
         }
+
         // - 강좌의 수강인원 증가
+        // 해당 강좌의 수강인원 증가
+        targetCourse.studentAdd();
         // - 학생의 수강료 업데이트
-    
+        System.out.println("현재 총 수강료 : " + targetStudent.getTotalPrice());
         // 5단계: 결과 반환
+        if (isTaskCheck) {
+            System.out.println("수강 신청이 완료되었습니다.");
+        } else {
+            System.out.println("수강 신청이 실패했습니다.");
+        }
+        return isTaskCheck;
     }
 
+    //     =============================== 수강 취소 24.12.17
+    public boolean cancelCourse(String studentId, String courseId) {
+        boolean isTaskCheck = false;
+        // 1. 유효성 검사
+        // - 입력값 검증
+        boolean isCourseFind = false;
+        boolean isStudentFind = false;
+        if (studentId == null || courseId == null) {
+            System.out.println("입력값이 없거나 유효하지 않습니다.");
+            return false;
+        }
+        // - 학생과 강좌 존재 여부 확인
+        Course targetCourse = null;
+        Student targetStudent = null;
+        for (Course course : courseList) {
+            if (course.getCourseId().equals(courseId)) {
+                targetCourse = course;
+                isCourseFind = true;
+                break;
+            }
+        }
+
+        for (Student student : studentsList) {
+            if (student.getStudentId().equals(studentId)) {
+                targetStudent = student;
+                isStudentFind = true;
+                break;
+            }
+        }
+
+        if (!isStudentFind || !isCourseFind) {
+            System.out.println("입력값이 유효하지 않습니다.");
+            return false;
+        }
+
+        // 2. 학생과 강좌 찾기
+        // - studentId로 학생 찾기 > targetStudent
+        // - courseId로 강좌 찾기 > targetCourse
+
+        // 3. 수강 여부 확인
+        // - 해당 학생이 그 강좌를 수강중인지 확인
+        boolean isCurrentTargetCourse = false;
+        Course currentCourse = null;
+        for (Course course : targetStudent.getCurrentCourseList()) {
+//            이 부분을 해당 검증한 값을 이미 담고있는 타겟코스 변수를 활용하여 비교하면 안되는건지? > "이 학생이 이 강좌를 수강하고 있는가?"를 판단해야 하기에 아이디 값을 비교해야함
+            if (course != null && course.getCourseId().equals(courseId)) {
+                currentCourse = course;
+                isCurrentTargetCourse = true;
+                break;
+            }
+        }
+
+        if (!isCurrentTargetCourse) {
+            System.out.println("해당 학생이 해당 강좌를 미수강중입니다.");
+            return false;
+        }
+
+        // 4. 수강 취소 처리
+        // - 학생의 수강 목록에서 제거
+        // - 수강료 차감
+        targetStudent.removeCourse(targetCourse);
+        // - 강좌의 수강인원 감소
+        targetCourse.studentSub();
+        isTaskCheck = true;
+
+        // 5. 결과 반환
+        if (isTaskCheck) {
+            System.out.println("수강 취소가 완료되었습니다.");
+            return true;
+        } else {
+            System.out.println("수강 취소가 실패하였습니다.");
+        }
+        return false;
+    }
 
     //     ===============================
     public boolean removeFromArray(Object[] array, int count, String objectId) {

@@ -38,6 +38,7 @@ public class Course {
         return this.courseName;
     }
 
+//    24.12.17 생성
     public int getCoursePrice() {
         return this.coursePrice;
     }
