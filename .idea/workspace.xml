@@ -54,36 +54,36 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AccountMain.executor": "Run",
-    "Application.Check_variable_value.executor": "Run",
-    "Application.Method1.executor": "Run",
-    "Application.Method2.executor": "Run",
-    "Application.MethodChange1.executor": "Run",
-    "Application.MethodChange2.executor": "Run",
-    "Application.MusicPlayerMain.executor": "Run",
-    "Application.NullMain1.executor": "Run",
-    "Application.NullMain2.executor": "Run",
-    "Application.NullMain3.executor": "Run",
-    "Application.ProducrMain.executor": "Run",
-    "Application.RectangleMain.executor": "Run",
-    "Application.StudentMain.executor": "Run",
-    "Application.VarChange1.executor": "Run",
-    "Application.VarChange2.executor": "Run",
-    "Application.initMain.executor": "Run",
-    "Application.tests.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/basic/src/Exam_241219_객체지향_학원관리프로그램/domain/main/main/main",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Check_variable_value.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Method1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Method2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MethodChange2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MusicPlayerMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.NullMain3.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ProducrMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RectangleMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.StudentMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VarChange1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VarChange2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.initMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.tests.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/basic/src/Exam_241219_객체지향_학원관리프로그램/domain/main/main/main&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241219_객체지향_학원관리프로그램\domain\main\main\main" />
@@ -93,6 +93,7 @@
       <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241214_객체지향_학원관리프로그램\domain\manager\manager" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Exam_250103_학생성적관리시스템" />
       <recent name="ref" />
     </key>
   </component>
