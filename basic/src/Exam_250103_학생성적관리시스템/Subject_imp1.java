@@ -1,5 +1,8 @@
+//25.01.04
+//setter 메서드들의 유효성 검사
+//불필요한 setter 제거 검토
+//메서드 이름의 일관성 (subjectScore와 subjectGrade 혼용)
 package Exam_250103_학생성적관리시스템;
-
 public class Subject_imp1 {
     // ✅ 필드 구조 개선 완료:
     // - 단일 과목 정보 표현
@@ -55,8 +58,10 @@ public class Subject_imp1 {
     //    --------------setter
 
 
-    public void setSubjectScore(int subjectGrade) {
+    public void setSubjectGrade(int subjectGrade) {
+        if (subjectGrade <= 3 && subjectGrade >= 1) {
         this.subjectGrade = subjectGrade;
+        }
     }
 
     public void setSubjectCodes(String subjectCodes) {
@@ -68,7 +73,9 @@ public class Subject_imp1 {
     }
 
     public void setSubjectName(String subjectName) {
+        if (subjectName != null && !subjectName.isEmpty()) {
         this.subjectName = subjectName;
+        }
     }
 
     //    ----------------------------
