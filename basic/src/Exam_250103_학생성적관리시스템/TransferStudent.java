@@ -41,7 +41,9 @@ public class TransferStudent extends Student {
 
     @Override
     public void calculateAverage(int[] gradeInfos) {
-//        작성 필요
+// ❗ 구현 필요:
+        // - 편입 학기 이후의 성적만 계산
+        // - 배열이 아닌 Score 객체 활용하도록 수정
     }
 
 

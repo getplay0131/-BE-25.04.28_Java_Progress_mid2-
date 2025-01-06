@@ -24,6 +24,8 @@ public class Score_imp1 {
             this.score = score;      // scores 변수가 정의되지 않음
             this.semester = semester;  // semester 변수가 정의되지 않음
             this.subjects = subjects;
+        } else {
+            System.out.println("유효하지 않은 입력값입니다.");
         }
     }
 
@@ -53,8 +55,10 @@ public class Score_imp1 {
     // ❗ 개선 필요:
     // - 점수 범위가 잘못됨 (현재 1-3, 실제로는 0-100이어야 함)
     public void setScore(int score) {
-        if (score <= 0 && score >= 100) {
+        if (score >= 0 && score <= 100) {
             this.score = score;
+        } else {
+            System.out.println("유효하지 않은 점수 범위입니다.");
         }
     }
     // ❗ 개선 필요:
@@ -62,6 +66,8 @@ public class Score_imp1 {
     public void setSemester(int semester) {
         if (semester >= 1 && semester <= 4) {
         this.semester = semester;
+        } else {
+            System.out.println("유효하지 않은 학기 범위입니다.");
         }
     }
 
@@ -89,4 +95,5 @@ public class Score_imp1 {
             return "false";
         }
     }
+
 }
