@@ -32,6 +32,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -54,56 +55,98 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AccountMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Check_variable_value.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Method1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Method2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MethodChange1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MethodChange2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MusicPlayerMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NullMain1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NullMain2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.NullMain3.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ProducrMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.RectangleMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.StudentMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VarChange1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VarChange2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.initMain.executor&quot;: &quot;Run&quot;,
-    &quot;Application.tests.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/basic/src/Exam_241219_객체지향_학원관리프로그램/domain/main/main/main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AbstractAnimalMain.executor": "Run",
+    "Application.AcademyMain.executor": "Run",
+    "Application.AccountMain.executor": "Run",
+    "Application.AnimalMain.executor": "Run",
+    "Application.AnimalMain2.executor": "Run",
+    "Application.AnimalMain3.executor": "Run",
+    "Application.CarMain.executor": "Run",
+    "Application.CarMain0.executor": "Run",
+    "Application.CarMain1.executor": "Run",
+    "Application.CastingMain3.executor": "Run",
+    "Application.CastingMain4.executor": "Run",
+    "Application.CastingMain5.executor": "Debug",
+    "Application.Check_variable_value.executor": "Run",
+    "Application.ConstantMain1.executor": "Run",
+    "Application.ConstantMain2.executor": "Run",
+    "Application.DiamondMain.executor": "Run",
+    "Application.Exam_241219_객체지향_학원관리프로그램.domain.AcademyMain.executor": "Run",
+    "Application.ExtendAccessMain.executor": "Run",
+    "Application.FinalFieldMain.executor": "Run",
+    "Application.FinalLocalMain.executor": "Run",
+    "Application.FinalRefMain.executor": "Run",
+    "Application.GameMain.executor": "Run",
+    "Application.InterfaceMain.executor": "Run",
+    "Application.LangMain.executor": "Run",
+    "Application.MemberMain.executor": "Run",
+    "Application.Method1.executor": "Run",
+    "Application.Method2.executor": "Run",
+    "Application.MethodChange1.executor": "Run",
+    "Application.MethodChange2.executor": "Run",
+    "Application.MusicPlayerMain.executor": "Run",
+    "Application.NullMain1.executor": "Run",
+    "Application.NullMain2.executor": "Run",
+    "Application.NullMain3.executor": "Run",
+    "Application.OverridingMain.executor": "Run",
+    "Application.PayMain0.executor": "Run",
+    "Application.PayMain1.executor": "Run",
+    "Application.PayMain2.executor": "Run",
+    "Application.PolyMain.executor": "Run",
+    "Application.Pro_직각삼각형출력하기.executor": "Run",
+    "Application.ProducrMain.executor": "Run",
+    "Application.Progress_241223.Exam2.ShopMain.executor": "Run",
+    "Application.Progress_241223.extends1.ex2.CarMain.executor": "Run",
+    "Application.Progress_241223.extends1.ex3.CarMain.executor": "Run",
+    "Application.Progress_241223.extends1.overriding.CarMain.executor": "Run",
+    "Application.Progress_241230.poly.selfEx1.AnimalMain.executor": "Run",
+    "Application.RectangleMain.executor": "Run",
+    "Application.SenderMain.executor": "Run",
+    "Application.ShoopngMallMain.executor": "Run",
+    "Application.ShopMain.executor": "Run",
+    "Application.StudentMain.executor": "Run",
+    "Application.Super2Main.executor": "Run",
+    "Application.SuperMain.executor": "Run",
+    "Application.TestLoopPlusSelf.executor": "Run",
+    "Application.VarChange1.executor": "Run",
+    "Application.VarChange2.executor": "Run",
+    "Application.animalMain.executor": "Run",
+    "Application.initMain.executor": "Run",
+    "Application.polyMain.executor": "Run",
+    "Application.tests.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid1",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241219_객체지향_학원관리프로그램\domain\main\main\main" />
-      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241219_객체지향_학원관리프로그램\domain\manager\manager\manager" />
-      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241217_객체지향_학원관리프로그램\domain\main\main" />
-      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241213=7_객체지향_학원관리프로그램\domain\main\main" />
-      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\basic\src\Exam_241214_객체지향_학원관리프로그램\domain\manager\manager" />
+      <recent name="F:\[집]자기계발\[집]공부\[집]컴퓨터 공학\[집]웹개발\[집]백엔드\[집][리마인드][자바] 소스 코드\[백] Java\[집][백]인프런 - 김영한의 자바\basic\src\Progress_241223\extends1\overriding" />
+      <recent name="F:\[집]자기계발\[집]공부\[집]컴퓨터 공학\[집]웹개발\[집]백엔드\[집][리마인드][자바] 소스 코드\[백] Java\[집][백]인프런 - 김영한의 자바\basic\src\Progress_241223\extends1\ex3" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250205.time.test" />
       <recent name="Exam_250103_학생성적관리시스템" />
-      <recent name="ref" />
+      <recent name="Progress_241231.poly.ex.pay0" />
+      <recent name="Progress_241231.poly.ex.sender" />
+      <recent name="Progress_241231.poly.car1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AccountMain">
-    <configuration name="AccountMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.AccountMain" />
+  <component name="RunManager" selected="Application.TestLoopPlusSelf">
+    <configuration name="LangMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250113.LangMain" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exam_2411282_241129.*" />
+          <option name="PATTERN" value="Progress_250113.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +154,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MusicPlayerMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.MusicPlayerMain" />
+    <configuration name="PayMain0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_241231.poly.ex.pay0.PayMain0" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exam_2411282_241129.*" />
+          <option name="PATTERN" value="Progress_241231.poly.ex.pay0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +167,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProducrMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.ProducrMain" />
+    <configuration name="PayMain1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_241231.poly.ex.pay0.PayMain1" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exam_2411282_241129.*" />
+          <option name="PATTERN" value="Progress_241231.poly.ex.pay0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +180,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.RectangleMain" />
+    <configuration name="PayMain2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_241231.poly.ex.pay0.PayMain2" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exam_2411282_241129.*" />
+          <option name="PATTERN" value="Progress_241231.poly.ex.pay0.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +193,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Exam_2411282_241129.StudentMain" />
+    <configuration name="TestLoopPlusSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250205.time.test.TestLoopPlusSelf" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Exam_2411282_241129.*" />
+          <option name="PATTERN" value="Progress_250205.time.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +208,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AccountMain" />
-        <item itemvalue="Application.ProducrMain" />
-        <item itemvalue="Application.StudentMain" />
-        <item itemvalue="Application.RectangleMain" />
-        <item itemvalue="Application.MusicPlayerMain" />
+        <item itemvalue="Application.TestLoopPlusSelf" />
+        <item itemvalue="Application.LangMain" />
+        <item itemvalue="Application.PayMain2" />
+        <item itemvalue="Application.PayMain1" />
+        <item itemvalue="Application.PayMain0" />
       </list>
     </recent_temporary>
   </component>
@@ -183,5 +226,232 @@
       <updated>1732149265825</updated>
     </task>
     <servers />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Exam_241220/Pro_직각삼각형출력하기.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Exam_241220/Pro_직각삼각형출력하기.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Exam_241220/Pro_직각삼각형출력하기.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Exam_241220/Pro_직각삼각형출력하기.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Exam_241220/Pro_직각삼각형출력하기.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>6</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>5</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/OverridingMain.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Parent.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Parent.java</url>
+          <line>11</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly_basic/CastingMain5.java</url>
+          <line>13</line>
+          <properties class="Progress_241224.poly_basic.CastingMain5" method="call">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>8</line>
+          <properties class="Progress_241224.poly.overriding.Child" method="getValue">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>12</line>
+          <properties class="Progress_241224.poly.overriding.Child" method="method">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Parent.java</url>
+          <line>6</line>
+          <properties class="Progress_241224.poly.overriding.Parent" method="getValue">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Parent.java</url>
+          <line>10</line>
+          <properties class="Progress_241224.poly.overriding.Parent" method="method">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/basic/src/Progress_241224/poly/overriding/Child.java</url>
+          <line>5</line>
+          <properties field="value" class="Progress_241224.poly.overriding.Child" />
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
