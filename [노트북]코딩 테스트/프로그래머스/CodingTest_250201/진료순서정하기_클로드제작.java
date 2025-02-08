@@ -1,4 +1,4 @@
-package CodingTest_250201_and_250202;
+package CodingTest_250201;
 
 //문제 설명:
 //소아과 병원에서 환자들의 체온을 기준으로 진료 순서를 정하려고 합니다.
