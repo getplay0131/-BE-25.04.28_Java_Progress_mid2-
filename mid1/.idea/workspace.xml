@@ -133,6 +133,9 @@
     "Application.StringUtilMain1.executor": "Run",
     "Application.StringUtilMain2.executor": "Run",
     "Application.SystemMain.executor": "Run",
+    "Application.TestCalendarPrinter.executor": "Run",
+    "Application.TestCalendarPrinterSelf.executor": "Run",
+    "Application.TestCalendarPrinterSelfFinal.executor": "Run",
     "Application.TestLoopPlus.executor": "Run",
     "Application.TestLoopPlusSelf.executor": "Run",
     "Application.TestPlus.executor": "Run",
@@ -159,6 +162,10 @@
     "Application.WrapperVsPrimitive.executor": "Run",
     "Application.ZoneIdMain.executor": "Run",
     "Application.ZonedDateTimeMain.executor": "Run",
+    "Application.calculateDate_1.executor": "Run",
+    "Application.calculateDate_2.executor": "Run",
+    "Application.printCurrentDate.executor": "Run",
+    "Application.printInputDayOfWeek.executor": "Run",
     "Application.testAdjusters.executor": "Run",
     "Application.testAdjustersSelf.executor": "Run",
     "Application.모스부호_1.executor": "Run",
@@ -189,13 +196,13 @@
       <recent name="Progress_250124.test.http" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestZone">
-    <configuration name="TestLoopPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250205.time.test.TestLoopPlus" />
+  <component name="RunManager" selected="Application.calculateDate_2">
+    <configuration name="TestCalendarPrinterSelfFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.TestCalendarPrinterSelfFinal" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250205.time.test.*" />
+          <option name="PATTERN" value="Progress_Exam_250211.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -203,12 +210,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestLoopPlusSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250205.time.test.TestLoopPlusSelf" />
+    <configuration name="calculateDate_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.calculateDate_1" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250205.time.test.*" />
+          <option name="PATTERN" value="Progress_Exam_250211.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -216,12 +223,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestZone" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250207.TestZone" />
+    <configuration name="calculateDate_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.calculateDate_2" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250207.*" />
+          <option name="PATTERN" value="Progress_Exam_250211.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,12 +236,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testAdjusters" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250207.testAdjusters" />
+    <configuration name="printCurrentDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.printCurrentDate" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250207.*" />
+          <option name="PATTERN" value="Progress_Exam_250211.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,12 +249,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testAdjustersSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250207.testAdjustersSelf" />
+    <configuration name="printInputDayOfWeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.printInputDayOfWeek" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250207.*" />
+          <option name="PATTERN" value="Progress_Exam_250211.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -257,11 +264,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestZone" />
-        <item itemvalue="Application.testAdjustersSelf" />
-        <item itemvalue="Application.testAdjusters" />
-        <item itemvalue="Application.TestLoopPlusSelf" />
-        <item itemvalue="Application.TestLoopPlus" />
+        <item itemvalue="Application.calculateDate_2" />
+        <item itemvalue="Application.calculateDate_1" />
+        <item itemvalue="Application.printInputDayOfWeek" />
+        <item itemvalue="Application.printCurrentDate" />
+        <item itemvalue="Application.TestCalendarPrinterSelfFinal" />
       </list>
     </recent_temporary>
   </component>
