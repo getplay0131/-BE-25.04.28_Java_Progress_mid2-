@@ -38,7 +38,6 @@ public class Ai_Exam_5 {
         int idx = 0;
         int arrayIdx = 0;
         int pmTime = 0;
-        int times = 0;
         boolean isPmCheck = false;
         if (str.contains("오후") || str.toLowerCase().contains("pm")) {
             pmTime = 12;
