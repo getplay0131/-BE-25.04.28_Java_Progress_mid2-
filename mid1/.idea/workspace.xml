@@ -38,6 +38,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AI_Exam_1.executor": "Run",
+    "Application.AI_Exam_2.executor": "Run",
+    "Application.AI_Exam_3.executor": "Run",
+    "Application.AI_Exam_4.executor": "Run",
+    "Application.Ai_Exam_5.executor": "Run",
     "Application.AuthGradeMain1.executor": "Run",
     "Application.AuthGradeMain2.executor": "Run",
     "Application.AuthGradeMain3.executor": "Run",
@@ -133,6 +138,7 @@
     "Application.StringUtilMain1.executor": "Run",
     "Application.StringUtilMain2.executor": "Run",
     "Application.SystemMain.executor": "Run",
+    "Application.TestCalanderPrinter.executor": "Run",
     "Application.TestCalendarPrinter.executor": "Run",
     "Application.TestCalendarPrinterSelf.executor": "Run",
     "Application.TestCalendarPrinterSelfFinal.executor": "Run",
@@ -196,13 +202,13 @@
       <recent name="Progress_250124.test.http" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.calculateDate_2">
-    <configuration name="TestCalendarPrinterSelfFinal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.TestCalendarPrinterSelfFinal" />
+  <component name="RunManager" selected="Application.Ai_Exam_5">
+    <configuration name="AI_Exam_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_1" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250211.*" />
+          <option name="PATTERN" value="Progress_Exam_250212.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -210,12 +216,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="calculateDate_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.calculateDate_1" />
+    <configuration name="AI_Exam_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_2" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250211.*" />
+          <option name="PATTERN" value="Progress_Exam_250212.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -223,12 +229,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="calculateDate_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.calculateDate_2" />
+    <configuration name="AI_Exam_3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_3" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250211.*" />
+          <option name="PATTERN" value="Progress_Exam_250212.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -236,12 +242,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="printCurrentDate" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.printCurrentDate" />
+    <configuration name="AI_Exam_4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_4" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250211.*" />
+          <option name="PATTERN" value="Progress_Exam_250212.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -249,12 +255,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="printInputDayOfWeek" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250211.printInputDayOfWeek" />
+    <configuration name="Ai_Exam_5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.Ai_Exam_5" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_Exam_250211.*" />
+          <option name="PATTERN" value="Progress_Exam_250212.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -264,11 +270,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.calculateDate_2" />
-        <item itemvalue="Application.calculateDate_1" />
-        <item itemvalue="Application.printInputDayOfWeek" />
-        <item itemvalue="Application.printCurrentDate" />
-        <item itemvalue="Application.TestCalendarPrinterSelfFinal" />
+        <item itemvalue="Application.Ai_Exam_5" />
+        <item itemvalue="Application.AI_Exam_4" />
+        <item itemvalue="Application.AI_Exam_3" />
+        <item itemvalue="Application.AI_Exam_2" />
+        <item itemvalue="Application.AI_Exam_1" />
       </list>
     </recent_temporary>
   </component>
