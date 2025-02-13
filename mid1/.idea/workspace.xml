@@ -116,6 +116,7 @@
     "Application.RefMain1_2.executor": "Run",
     "Application.RefMain1_3.executor": "Run",
     "Application.RefMain1_4.executor": "Run",
+    "Application.ShadowingMain.executor": "Run",
     "Application.StringBasicMain.executor": "Run",
     "Application.StringBuilderMain1_1.executor": "Run",
     "Application.StringBuilderMain1_2.executor": "Run",
@@ -202,20 +203,7 @@
       <recent name="Progress_250124.test.http" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Ai_Exam_5">
-    <configuration name="AI_Exam_1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_1" />
-      <module name="mid1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Progress_Exam_250212.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.ShadowingMain">
     <configuration name="AI_Exam_2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Progress_Exam_250212.AI_Exam_2" />
       <module name="mid1" />
@@ -268,13 +256,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ShadowingMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250213.nested.ShadowingMain" />
+      <module name="mid1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Progress_250213.nested.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ShadowingMain" />
         <item itemvalue="Application.Ai_Exam_5" />
         <item itemvalue="Application.AI_Exam_4" />
         <item itemvalue="Application.AI_Exam_3" />
         <item itemvalue="Application.AI_Exam_2" />
-        <item itemvalue="Application.AI_Exam_1" />
       </list>
     </recent_temporary>
   </component>
