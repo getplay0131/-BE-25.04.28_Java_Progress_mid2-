@@ -12,73 +12,37 @@ import java.util.Arrays;
 public class 프로그래머스_가까운수 {
     public int solution(int[] array, int n) {
         int answer = 0;
-        int[] ints = new int[array.length + 1];
-//        정수 배열의 크기 + 1의 크기를 가진 새 배열에 복사해서 비교
-        System.arraycopy(array,0,ints,0,array.length);
-//    정수 n을 배열에 추가
-        ints[ints.length-1] = n;
-        //    입력 받는 변수 순서 정렬
-        Arrays.sort(ints);
-        for (int i = 0; i < ints.length ; i++) {
-//        정수 n 전과 이후 수에 대해 정수 n과의 비교
-            if (ints[i] == n && (i < ints.length-1 && i > 0)) {
-                int beforeNum = ints[i-1];
-                int afterNum = ints[i+1];
-//        값 차이가 덜 나는 수를 리턴
-                if (Math.abs((beforeNum - n))> Math.abs((afterNum - n))) {
-                    answer = afterNum;
-                    break;
-                } else {
-                    answer = beforeNum;
-                    break;
-                }
-            } else if (ints[i] == n && i == 0) {
-                answer = ints[i+1];
-                break;
-            } else if (ints[i] == n && i == ints.length-1) {
-                answer = ints[i-1];
-                break;
-            }
-            continue;
-        }
-        System.out.println("answer = " + answer);
         return answer;
     }
 
-//    디버깅용 메인 클래스 코드
     public static void main(String[] args) {
         int answer = 0;
-        int[] array = {10,11,16};
-        int n = 13;
+        int[] array = {3,10,28};
+        int n = 20;
         int[] ints = new int[array.length + 1];
-//        정수 배열의 크기 + 1의 크기를 가진 새 배열에 복사해서 비교
-        System.arraycopy(array,0,ints,0,array.length);
-//    정수 n을 배열에 추가
+        System.arraycopy(array,0,ints,0,ints.length);
         ints[ints.length-1] = n;
         //    입력 받는 변수 순서 정렬
         Arrays.sort(ints);
         for (int i = 0; i < ints.length ; i++) {
-//        정수 n 전과 이후 수에 대해 정수 n과의 비교
-            if (ints[i] == n && (i < ints.length-1 && i > 0)) {
+            if (ints[i] == n && i != ints.length-1 && i != 0) {
                 int beforeNum = ints[i-1];
                 int afterNum = ints[i+1];
-//        값 차이가 덜 나는 수를 리턴
-                if (Math.abs((beforeNum - n))> Math.abs((afterNum - n))) {
+                if ((beforeNum - n) > (afterNum - n)) {
                     answer = afterNum;
-                    break;
                 } else {
                     answer = beforeNum;
-                    break;
                 }
             } else if (ints[i] == n && i == 0) {
                 answer = ints[i+1];
-                break;
-            } else if (ints[i] == n && i == ints.length-1) {
-                answer = ints[i-1];
-                break;
+            } else {
+                answer = ints[ints.length-2];
             }
-            continue;
         }
         System.out.println("answer = " + answer);
+//    정수 n을 배열에 추가
+//        정수 배열의 크기 + 1의 크기를 가진 새 배열에 복사해서 비교
+//        정수 n 전과 이후 수에 대해 정수 n과의 비교
+//        값 차이가 덜 나는 수를 리턴
     }
 }
