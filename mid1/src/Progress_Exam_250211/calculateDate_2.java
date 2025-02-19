@@ -45,41 +45,29 @@ public class calculateDate_2 {
         String[] startdates = new String[3];
         String[] enddates = new String[3];
 
-        startdates = checkSplit(startdates, inputStartDate);
-        enddates =   checkSplit(enddates, inputEndDate);
-
-        int[] startIntArr = shapeConversion(startdates);
-        int[] endIntArr = shapeConversion(enddates);
-
-        LocalDate startDate = LocalDate.of(startIntArr[0], startIntArr[1], startIntArr[2]);
-        LocalDate endDate = LocalDate.of(endIntArr[0], endIntArr[1], endIntArr[2]);
-
-        Period between = Period.between(startDate, endDate);
-        System.out.println("두 날짜 사이의 간격은 " + between.getYears() + "년 " + between.getMonths() + "개월 " + between.getDays() + "일 입니다");
-
-
-    }
-
-    public static String[] checkSplit(String[] arrays, String dates) {
-        if (dates.contains(" ")) {
-            arrays = dates.split(" ");
-        } else if (dates.contains("-")) {
-            arrays = dates.split("-");
-        } else if (dates.contains(".")) {
-            arrays = dates.split("\\.");
+        if ((inputStartDate.contains(" ") && inputEndDate.contains(" ")) ||(inputStartDate.contains(" ") || inputEndDate.contains(" ")) ) {
+            startdates = inputStartDate.split(" ");
+            enddates = inputEndDate.split(" ");
+        } else if ((inputStartDate.contains("-") && inputEndDate.contains("-")) ||(inputStartDate.contains("-") || inputEndDate.contains("-"))) {
+            startdates = inputStartDate.split("-");
+            enddates = inputEndDate.split("-");
+        } else if ((inputStartDate.contains("\\.") && inputEndDate.contains("\\.")) ||(inputStartDate.contains("\\.") || inputEndDate.contains("\\."))) {
+            startdates = inputStartDate.split("\\.");
+            enddates = inputEndDate.split("\\.");
         }
 
-        for (String array : arrays) {
-            if (array == null || array.isEmpty()) {
-                System.out.println("입력 값 분리에 실패하였습니다.");
-            }
+        System.out.println("시작 날짜 배열 내용");
+        for (String startdate : startdates) {
+            System.out.println(startdate);
         }
-        return arrays;
-    }
 
-    public static int[] shapeConversion(String[] arrays) {
-        int[] intArr = {Integer.parseInt(arrays[0]), Integer.parseInt(arrays[1]), Integer.parseInt(arrays[2])};
+//        LocalDate startDate = LocalDate.of(Integer.parseInt(startdates[0]), Integer.parseInt(startdates[1]), Integer.parseInt(startdates[2]));
+//        LocalDate endDate = LocalDate.of(Integer.parseInt(enddates[0]), Integer.parseInt(enddates[1]),
+//                Integer.parseInt(enddates[2]));
+//
+//        Period between = Period.between(startDate, endDate);
+//        System.out.println("두 날짜 사이의 간격은 " + between.getYears() + "년 " + between.getMonths() + "개월 " + between.getDays() + "일 입니다");
 
-        return intArr;
+
     }
 }

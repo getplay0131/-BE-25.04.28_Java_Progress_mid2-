@@ -90,6 +90,7 @@
     "Application.NullMain1.executor": "Run",
     "Application.NullMain2.executor": "Run",
     "Application.NullMain3.executor": "Run",
+    "Application.OuterClass1Main.executor": "Run",
     "Application.OverridingMain.executor": "Run",
     "Application.PayMain0.executor": "Run",
     "Application.PayMain1.executor": "Run",
@@ -140,7 +141,7 @@
       <recent name="Progress_241231.poly.car1" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestLoopPlusSelf">
+  <component name="RunManager" selected="Application.OuterClass1Main">
     <configuration name="LangMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Progress_250113.LangMain" />
       <module name="기본" />
@@ -154,12 +155,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PayMain0" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_241231.poly.ex.pay0.PayMain0" />
+    <configuration name="OuterClass1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.OuterClass1Main" />
       <module name="기본" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_241231.poly.ex.pay0.*" />
+          <option name="PATTERN" value="Progress_250219.nested.test2nd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OuterClass1Main" />
         <item itemvalue="Application.TestLoopPlusSelf" />
         <item itemvalue="Application.LangMain" />
         <item itemvalue="Application.PayMain2" />
         <item itemvalue="Application.PayMain1" />
-        <item itemvalue="Application.PayMain0" />
       </list>
     </recent_temporary>
   </component>
