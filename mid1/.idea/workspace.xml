@@ -124,6 +124,11 @@
     "Application.Progress_250113.LangMain.executor": "Run",
     "Application.Progress_250213.nested.ex2.NetworkMain.executor": "Run",
     "Application.Progress_250213.nested.inner.ex2.CarMain.executor": "Run",
+    "Application.Progress_250220.nested.test3nd.OuterClass1Main.executor": "Run",
+    "Application.Progress_250220.nested.test3nd.OuterClass2Main.executor": "Run",
+    "Application.Progress_250220.nested.test3nd.OuterClass3Main.executor": "Run",
+    "Application.Progress_250220.nested.test3nd.OuterClass4Main.executor": "Run",
+    "Application.Progress_250220.nested.test3nd.ex1.LibraryMain.executor": "Run",
     "Application.RandomMain.executor": "Run",
     "Application.RectangelMain.executor": "Run",
     "Application.RefMain1_1.executor": "Run",
@@ -208,20 +213,20 @@
       <recent name="F:\[집]자기계발\[집]공부\[집]컴퓨터 공학\[집]웹개발\[집]백엔드\[집][리마인드][자바] 소스 코드\[백] Java\[집][백]인프런 - 김영한의 자바\mid1\src\Progress_250124" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250220.nested.test3nd" />
       <recent name="Progress_250219.nested.test2nd" />
       <recent name="Progress_250218.nested.anomymous.ex" />
       <recent name="Progress_250218.nested.anomymous" />
       <recent name="Progress_250214.nested.local" />
-      <recent name="Progress_Exam_250211" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.LibraryMain">
-    <configuration name="LibraryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.ex1_2nd.LibraryMain" />
+  <component name="RunManager" selected="Application.Progress_250220.nested.test3nd.ex1.LibraryMain">
+    <configuration name="Progress_250220.nested.test3nd.OuterClass1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass1Main" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250219.nested.test2nd.ex1_2nd.*" />
+          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -229,12 +234,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OuterClass1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.OuterClass1Main" />
+    <configuration name="Progress_250220.nested.test3nd.OuterClass2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass2Main" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250219.nested.test2nd.*" />
+          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -242,12 +247,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OuterClass2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.OuterClass2Main" />
+    <configuration name="Progress_250220.nested.test3nd.OuterClass3Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass3Main" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250219.nested.test2nd.*" />
+          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -255,12 +260,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OuterClass3Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.OuterClass3Main" />
+    <configuration name="Progress_250220.nested.test3nd.OuterClass4Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass4Main" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250219.nested.test2nd.*" />
+          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -268,12 +273,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OuterClass4Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250219.nested.test2nd.OuterClass4Main" />
+    <configuration name="Progress_250220.nested.test3nd.ex1.LibraryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.ex1.LibraryMain" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250219.nested.test2nd.*" />
+          <option name="PATTERN" value="Progress_250220.nested.test3nd.ex1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -283,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LibraryMain" />
-        <item itemvalue="Application.OuterClass4Main" />
-        <item itemvalue="Application.OuterClass3Main" />
-        <item itemvalue="Application.OuterClass2Main" />
-        <item itemvalue="Application.OuterClass1Main" />
+        <item itemvalue="Application.Progress_250220.nested.test3nd.ex1.LibraryMain" />
+        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass4Main" />
+        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass3Main" />
+        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass2Main" />
+        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass1Main" />
       </list>
     </recent_temporary>
   </component>
