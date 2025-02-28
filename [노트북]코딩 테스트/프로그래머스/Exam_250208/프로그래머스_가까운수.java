@@ -28,7 +28,7 @@ public class 프로그래머스_가까운수 {
             if (ints[i] == n && i != ints.length-1 && i != 0) {
                 int beforeNum = ints[i-1];
                 int afterNum = ints[i+1];
-                if ( Math.abs(beforeNum - n) > Math.abs(afterNum - n)) {
+                if ((beforeNum - n) > (afterNum - n)) {
                     answer = afterNum;
                 } else {
                     answer = beforeNum;

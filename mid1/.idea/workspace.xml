@@ -51,6 +51,8 @@
     "Application.ChangeTimePlusMain.executor": "Run",
     "Application.ChangeTimeWithMain.executor": "Run",
     "Application.CharArrayMain.executor": "Run",
+    "Application.CheckedCatchMain.executor": "Run",
+    "Application.CheckedThrowMain.executor": "Run",
     "Application.ChronoFieldMain.executor": "Run",
     "Application.ChronoUnitMain.executor": "Run",
     "Application.ClassCreatemain.executor": "Run",
@@ -71,6 +73,12 @@
     "Application.EqualsMainV1.executor": "Run",
     "Application.EqualsMainV2.executor": "Run",
     "Application.Ex0RefMain.executor": "Run",
+    "Application.Ex1Main.executor": "Run",
+    "Application.Ex1RefMainV1.executor": "Run",
+    "Application.Ex1RefMainV2 (1).executor": "Run",
+    "Application.Ex1RefMainV2.executor": "Run",
+    "Application.Ex1RefMainV4.executor": "Run",
+    "Application.Ex1RefMainV5.executor": "Run",
     "Application.FormattingMain1.executor": "Run",
     "Application.FormattingMain2.executor": "Run",
     "Application.GetTimeMain.executor": "Run",
@@ -97,6 +105,13 @@
     "Application.LottoGeneratorMain.executor": "Run",
     "Application.LottoGeneratorMain1.executor": "Run",
     "Application.Main.executor": "Run",
+    "Application.MainV0.executor": "Run",
+    "Application.MainV1.executor": "Run",
+    "Application.MainV1_2.executor": "Run",
+    "Application.MainV1_3.executor": "Run",
+    "Application.MainV2.executor": "Run",
+    "Application.MainV3.executor": "Run",
+    "Application.MainV4.executor": "Run",
     "Application.MathMain.executor": "Run",
     "Application.MemberMainV1.executor": "Run",
     "Application.MemberMainV2.executor": "Run",
@@ -119,16 +134,13 @@
     "Application.OuterClass2Main.executor": "Run",
     "Application.OuterClass3Main.executor": "Run",
     "Application.OuterClass4Main.executor": "Run",
+    "Application.OuterClass5Main.executor": "Run",
     "Application.PeriodMain.executor": "Run",
     "Application.Primitivemain.executor": "Run",
     "Application.Progress_250113.LangMain.executor": "Run",
     "Application.Progress_250213.nested.ex2.NetworkMain.executor": "Run",
     "Application.Progress_250213.nested.inner.ex2.CarMain.executor": "Run",
-    "Application.Progress_250220.nested.test3nd.OuterClass1Main.executor": "Run",
-    "Application.Progress_250220.nested.test3nd.OuterClass2Main.executor": "Run",
-    "Application.Progress_250220.nested.test3nd.OuterClass3Main.executor": "Run",
-    "Application.Progress_250220.nested.test3nd.OuterClass4Main.executor": "Run",
-    "Application.Progress_250220.nested.test3nd.ex1.LibraryMain.executor": "Run",
+    "Application.Progress_250221.exception.self.ex0.MainV0.executor": "Run",
     "Application.RandomMain.executor": "Run",
     "Application.RectangelMain.executor": "Run",
     "Application.RefMain1_1.executor": "Run",
@@ -177,6 +189,8 @@
     "Application.TestZone.executor": "Run",
     "Application.ToStringMain1.executor": "Run",
     "Application.ToStringMain2.executor": "Run",
+    "Application.UnchekedCatchMain.executor": "Run",
+    "Application.UnchekedThrowMain.executor": "Run",
     "Application.WrapperClassMain.executor": "Run",
     "Application.WrapperTest1.executor": "Run",
     "Application.WrapperTest2.executor": "Run",
@@ -213,20 +227,20 @@
       <recent name="F:\[집]자기계발\[집]공부\[집]컴퓨터 공학\[집]웹개발\[집]백엔드\[집][리마인드][자바] 소스 코드\[백] Java\[집][백]인프런 - 김영한의 자바\mid1\src\Progress_250124" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="Progress_250220.nested.test3nd" />
-      <recent name="Progress_250219.nested.test2nd" />
-      <recent name="Progress_250218.nested.anomymous.ex" />
-      <recent name="Progress_250218.nested.anomymous" />
-      <recent name="Progress_250214.nested.local" />
+      <recent name="Progress_250227.exception.ex4.exception" />
+      <recent name="Progress_250227.exception.ex3.exception" />
+      <recent name="Progress_250226.exception.ex2" />
+      <recent name="Progress_250225.exception.basic.unchecked" />
+      <recent name="Progress_250221.exception.ex0" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Progress_250220.nested.test3nd.ex1.LibraryMain">
-    <configuration name="Progress_250220.nested.test3nd.OuterClass1Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass1Main" />
+  <component name="RunManager" selected="Application.MainV4">
+    <configuration name="MainV2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250226.exception.ex2.MainV2" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
+          <option name="PATTERN" value="Progress_250227.exception.ex3.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -234,12 +248,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Progress_250220.nested.test3nd.OuterClass2Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass2Main" />
+    <configuration name="MainV3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250227.exception.ex3.exception.MainV3" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
+          <option name="PATTERN" value="Progress_250227.exception.ex3.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -247,12 +261,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Progress_250220.nested.test3nd.OuterClass3Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass3Main" />
+    <configuration name="MainV4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250227.exception.ex4.exception.MainV4" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
+          <option name="PATTERN" value="Progress_250227.exception.ex4.exception.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,12 +274,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Progress_250220.nested.test3nd.OuterClass4Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.OuterClass4Main" />
+    <configuration name="UnchekedCatchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250225.exception.basic.unchecked.UnchekedCatchMain" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250220.nested.test3nd.*" />
+          <option name="PATTERN" value="Progress_250225.exception.basic.unchecked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -273,12 +287,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Progress_250220.nested.test3nd.ex1.LibraryMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Progress_250220.nested.test3nd.ex1.LibraryMain" />
+    <configuration name="UnchekedThrowMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Progress_250225.exception.basic.unchecked.UnchekedThrowMain" />
       <module name="mid1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Progress_250220.nested.test3nd.ex1.*" />
+          <option name="PATTERN" value="Progress_250225.exception.basic.unchecked.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -288,11 +302,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Progress_250220.nested.test3nd.ex1.LibraryMain" />
-        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass4Main" />
-        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass3Main" />
-        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass2Main" />
-        <item itemvalue="Application.Progress_250220.nested.test3nd.OuterClass1Main" />
+        <item itemvalue="Application.MainV4" />
+        <item itemvalue="Application.MainV3" />
+        <item itemvalue="Application.MainV2" />
+        <item itemvalue="Application.UnchekedThrowMain" />
+        <item itemvalue="Application.UnchekedCatchMain" />
       </list>
     </recent_temporary>
   </component>
