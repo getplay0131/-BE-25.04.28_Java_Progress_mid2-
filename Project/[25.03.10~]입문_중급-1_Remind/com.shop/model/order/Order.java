@@ -1,4 +1,10 @@
 package model.order;
+
+import model.product.Product;
+
+import java.time.LocalDateTime;
+import java.util.ArrayList;
+
 /*
  * 주문 정보를 나타내는 클래스
  *
@@ -15,4 +21,19 @@ package model.order;
  * 9. toString() 메서드 오버라이딩: 주문 정보 출력
  */
 public class Order {
+    private String orderId;
+    private String userId;
+    private ArrayList<OrderItem> orderItems;
+    private LocalDateTime orderTime;
+    private int totalPrice;
+    private String orderStat;
+
+    public Order(String orderId, String userId, ArrayList<OrderItem> orderItems,int totalPrice, String orderStat) {
+        this.orderId = orderId;
+        this.userId = userId;
+        this.orderItems = orderItems;
+        this.orderTime = LocalDateTime.now();
+        this.totalPrice = totalPrice;
+        this.orderStat = orderStat;
+    }
 }

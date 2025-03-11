@@ -100,7 +100,9 @@ public class User {
     }
 
 //method
-    public void calculateDiscountPercent(int price){
+// 수정 후: 직접 계산하고 결과 반환 또는 저장
+    public int calculateDiscountPercent(int price){
+        return price;
     }
 
     public void pointEarned(int price){

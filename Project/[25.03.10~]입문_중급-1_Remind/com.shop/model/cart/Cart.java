@@ -1,4 +1,12 @@
 package model.cart;
+
+import model.product.Product;
+import model.user.User;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+
 /*
  * 사용자의 장바구니를 나타내는 클래스
  *
@@ -14,4 +22,62 @@ package model.cart;
  * 8. 장바구니 내용 출력 메서드 구현
  */
 public class Cart {
+    private String userId;
+    private ArrayList<CartItem> items = new ArrayList<>(); // 상품ID를 키로 사용
+
+    public Cart(String userId) {
+        this.userId = userId;
+    }
+
+    public void addItem(Product product, int quantity) {
+        for (CartItem item : items) {
+            if (item.getProduct().getProductId().equals(product.getProductId())) {
+//                기존 수량에추가
+                item.setStockCount(item.getStockCount() + quantity);
+                return;
+            }
+        }
+
+//        새 상품이면 추가
+        items.add(new CartItem(product, quantity));
+    }
+
+    public void removeItem(String productId) {
+//        삭제할 상품 찾기
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).getProduct().getProductId().equals(productId)) {
+                items.remove(i);
+                break;
+            }
+        }
+    }
+
+    public void updateQuantity(String productId, int newQuantity) {
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).getProduct().getProductId().equals(productId)) {
+                items.get(i).getProduct().setStockCount(newQuantity);
+                break;
+            }
+        }
+    }
+
+    public int calculateTotalPrice(){
+        int total = 0;
+        for (CartItem item : items) {
+            total += item.productPriceCalculate();
+        }
+        return total;
+    }
+
+    public void clearCart(){
+        items.clear();
+    }
+
+    public void displayCart(){
+        System.out.println("== 장바구니 내역 ==");
+        for (CartItem item : items) {
+            System.out.println(item);
+        }
+        System.out.println("총액 : " + calculateTotalPrice() + "원");
+    }
 }

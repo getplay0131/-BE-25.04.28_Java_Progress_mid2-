@@ -8,5 +8,23 @@ package model.product;
  * 3. 생성자와 getter 메서드 구현
  * 4. 할인율을 적용한 가격 계산 메서드 구현
  */
-public class Category_Enum {
+public enum Category_Enum {
+    ELECTRONICS(10),CLOTHING(5),FOOD(3),BOOKS(5);
+
+    private int discountPercent;
+
+//    생성자
+    Category_Enum(int discountPercent) {
+        this.discountPercent = discountPercent;
+    }
+
+//    getter
+    public int getDiscountPercent() {
+        return discountPercent;
+    }
+
+//    method
+    public int calculateDiscount(int price){
+        return price - (price * getDiscountPercent() / 100);
+    }
 }
