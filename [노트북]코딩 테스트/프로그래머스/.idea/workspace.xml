@@ -4,23 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0179723e-c96c-47ce-945f-28028b3c276a" name="Changes" comment="" />
+    <list default="true" id="32538583-345d-442d-b1ee-f71a20060c01" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
+  &quot;associatedIndex&quot;: 6
 }</component>
-  <component name="ProjectId" id="2u80Fy1UQYgIO7Ir4X6FYrZRwL6" />
+  <component name="ProjectId" id="2uKfDs0YSj983nXxMxtOfl218uB" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,18 +23,17 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/Project",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/Project"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0179723e-c96c-47ce-945f-28028b3c276a" name="Changes" comment="" />
-      <created>1741614793242</created>
+      <changelist id="32538583-345d-442d-b1ee-f71a20060c01" name="Changes" comment="" />
+      <created>1742002069535</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1741614793242</updated>
+      <updated>1742002069535</updated>
     </task>
     <servers />
   </component>

@@ -29,6 +29,10 @@ public class Cart {
         this.userId = userId;
     }
 
+    public String getUserId() {
+        return userId;
+    }
+
     public void addItem(Product product, int quantity) {
         for (CartItem item : items) {
             if (item.getProduct().getProductId().equals(product.getProductId())) {

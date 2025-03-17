@@ -19,6 +19,8 @@ public class User {
     private String email;
     private String password;
     private String address;
+//    각 사용자별로 포인트 관리를 위해 논 스태틱
+    private int totalPoint;
 
 //    생성자
 
@@ -28,6 +30,7 @@ public class User {
         this.email = email;
         this.password = password;
         this.address = address;
+        this.totalPoint = 0;
     }
 
 //    getter
@@ -52,7 +55,11 @@ public class User {
         return address;
     }
 
-//setter
+    public int getTotalPoint() {
+        return totalPoint;
+    }
+
+    //setter
 
     public void setMemberId(String memberId) {
         this.memberId = memberId;
@@ -105,6 +112,33 @@ public class User {
         return price;
     }
 
-    public void pointEarned(int price){
+//포인트가 기준 이상이면 해당 유저를 vip로 바꾼다.
+    public int pointEarned(int price){
+        return totalPoint;
+    }
+
+    public boolean checkPoint(){
+        if (totalPoint >= 500000) {
+            return true;
+        }
+        return false;
+    }
+
+    public enum userGrade{
+        REGULAR(3),VIP(10);
+
+        private int discontPercent;
+
+        userGrade(int discontPercent) {
+            this.discontPercent = discontPercent;
+        }
+
+        public int getDiscontPercent() {
+            return discontPercent;
+        }
+
+        public void setDiscontPercent(int discontPercent) {
+            this.discontPercent = discontPercent;
+        }
     }
 }

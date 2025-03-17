@@ -37,7 +37,7 @@ public class VIPUser extends User{
     }
 
     @Override
-    public void pointEarned(int price) {
-        super.pointEarned(price * getHighAccrualRate());
+    public int pointEarned(int price) {
+       return super.pointEarned(price * getHighAccrualRate());
     }
 }

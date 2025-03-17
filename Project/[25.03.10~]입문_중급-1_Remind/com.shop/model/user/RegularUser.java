@@ -1,4 +1,5 @@
 package model.user;
+
 /*
  * 일반 회원 클래스
  *
@@ -32,8 +33,8 @@ public class RegularUser extends User {
     }
 
     @Override
-    public void pointEarned(int price) {
-        super.pointEarned(price * getAccrualRate());
+    public int pointEarned(int price) {
+        return super.pointEarned(price * getAccrualRate());
     }
 }
 
