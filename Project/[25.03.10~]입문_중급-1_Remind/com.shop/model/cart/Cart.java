@@ -46,10 +46,10 @@ public class Cart {
         items.add(new CartItem(product, quantity));
     }
 
-    public void removeItem(String productId) {
+    public void removeItem(CartItem cartItem) {
 //        삭제할 상품 찾기
         for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getProduct().getProductId().equals(productId)) {
+            if (items.get(i).getProduct().getProductId().equals(cartItem.getProduct().getProductId())) {
                 items.remove(i);
                 break;
             }
@@ -68,7 +68,7 @@ public class Cart {
     public int calculateTotalPrice(){
         int total = 0;
         for (CartItem item : items) {
-            total += item.productPriceCalculate();
+            total += item.productPriceCalculate() ;
         }
         return total;
     }

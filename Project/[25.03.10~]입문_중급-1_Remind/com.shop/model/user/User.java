@@ -124,7 +124,7 @@ public class User {
         return false;
     }
 
-    public enum userGrade{
+    public static enum userGrade{
         REGULAR(3),VIP(10);
 
         private int discontPercent;

@@ -41,17 +41,38 @@ public class Order {
         this.isCheckPayed = false;
     }
 
+    public String getOrderId() {
+        return orderId;
+    }
+
+    public String getUserId() {
+        return userId;
+    }
+
+    public int getTotalPrice() {
+        return totalPrice;
+    }
+
+    public orderStats getOrderStats() {
+        return orderStats;
+    }
+
+    public boolean isCheckPayed() {
+        return isCheckPayed;
+    }
+
     //    4. 주문 항목 추가 메서드 구현
     public void addOrderItem(OrderItem orderItem) {
         orderItems.add(orderItem);
     }
 
     //    5. 총액 계산 메서드 구현
-    public void updateTotalPrice() {
+    public int updateTotalPrice() {
         totalPrice = 0;
         for (OrderItem orderItem : orderItems) {
             totalPrice += orderItem.calculateTotalPrice();
         }
+        return totalPrice;
     }
 
     //    6. 주문 상태 변경 메서드 구현
