@@ -31,6 +31,10 @@ public class UserService {
         this.userList = new ArrayList<>();
     }
 
+    public ArrayList<User> getUserList() {
+        return userList;
+    }
+
     //    null 검사 메서드
     public boolean checkNull(Object object) {
         if (object == null) {

@@ -42,6 +42,10 @@ public class ProductService {
         return productService;
     }
 
+    public ArrayList<Product> getProductList() {
+        return productList;
+    }
+
     //* 3. 상품 추가 메서드 구현
     public void addProduct(Product product) {
         if (!product.getProductId().isEmpty()) {

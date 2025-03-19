@@ -40,6 +40,10 @@ public class CartService {
         return cartService;
     }
 
+    public ArrayList<Cart> getCartArrayList() {
+        return cartArrayList;
+    }
+
     //    null 검사 메서드
     public boolean checkNull(Object object) {
         if (object == null) {
