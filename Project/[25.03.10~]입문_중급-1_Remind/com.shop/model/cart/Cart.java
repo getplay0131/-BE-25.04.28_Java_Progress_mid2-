@@ -33,6 +33,15 @@ public class Cart {
         return userId;
     }
 
+//    getter, setter
+    public ArrayList<CartItem> getItems() {
+        return items;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
     public void addItem(Product product, int quantity) {
         for (CartItem item : items) {
             if (item.getProduct().getProductId().equals(product.getProductId())) {
