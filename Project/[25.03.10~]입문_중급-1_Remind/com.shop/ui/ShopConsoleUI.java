@@ -39,9 +39,29 @@ public class ShopConsoleUI {
             displayMainMenu();
             String choice = reader.readLine();
 
+            //    *TODO : 사용자 선택에 따른 호출 로직 구현하기
+//    System.out.println("1. 사용자 정보 관리");
+//        System.out.println("2. 장바구니 관리");
+//        System.out.println("3. 상품 관리");
+//        System.out.println("4. 주문 내역 관리");
+            if (choice.contains("1")) {
+//        사용자 정보 관리
+                System.out.println("로그인 및 사용자 등록 기능으로 이동합니다.");
 
+            } else if (choice.contains("2")) {
+//      장바구니 관리
+            } else if (choice.contains("3")) {
+//      상품 관리
+
+            } else if (choice.contains("4")) {
+//      주문 관리
+
+            } else {
+                System.out.println("올바른 값을 입력해주세요!");
+            }
         }
     }
+//     ============
 
     public static void displayMainMenu() {
         System.out.println("안녕하세요! 오늘도 저희 클릭스에 방문하신것을 환영합니다!");
@@ -53,34 +73,7 @@ public class ShopConsoleUI {
         System.out.println("-- 원하시는 기능의 번호를 입력해주세요! ex)1번 or 1 --");
     }
 
-//     ============
 
-    public static boolean choiceService(String choice) {
-        //         * 2. 각 서비스 클래스의 인스턴스 참조
-//        서비스 인스턴스 호출
-
-        //    *TODO : 사용자 선택에 따른 호출 로직 구현하기
-//    System.out.println("1. 사용자 정보 관리");
-//        System.out.println("2. 장바구니 관리");
-//        System.out.println("3. 상품 관리");
-//        System.out.println("4. 주문 내역 관리");
-        if (choice.contains("1")) {
-//        사용자 정보 관리
-            System.out.println("로그인 및 사용자 등록 기능으로 이동합니다.");
-            userCheckAndRegist()
-        } else if (choice.contains("2")) {
-//      장바구니 관리
-        } else if (choice.contains("3")) {
-//      상품 관리
-
-        } else if (choice.contains("4")) {
-//      주문 관리
-            return orderService;
-        } else {
-            System.out.println("올바른 값을 입력해주세요!");
-        }
-        return fasle;
-    }
 
 //     ============
 
@@ -240,6 +233,40 @@ public class ShopConsoleUI {
 //     ---------------------
 
     //    * 9. 사용자 로그인/등록 메서드 구현
+
+    public User registNewUser(BufferedReader reader) throws Exception{
+        User newUser = null;
+
+        System.out.println(" -- 유저 등록 시작 -- ");
+        //        상품 정보 입력 받기
+        ArrayList<Object> userInfos = new ArrayList<>();
+        System.out.println("고객님이 사용할 아이디를 입력해주세요");
+        String newUserId = reader.readLine();
+        userInfos.add(newUserId);
+        System.out.println("고객님의 성함을 입력해주세요");
+        String newUserName = reader.readLine();
+        userInfos.add(newUserName);
+        System.out.println("사용할 이메일을 입력해주세요");
+        String newUserEmail = reader.readLine();
+        userInfos.add(newUserEmail);
+        System.out.println("사용할 비밀번호를 입력해주세요");
+        String newUserPw = reader.readLine();
+        userInfos.add(newUserPw);
+        System.out.println("거주하시는 주소를 입력해주세요");
+        String newUserAddress = reader.readLine();
+        userInfos.add(newUserAddress);
+        System.out.println("-- 유저 정보 검증 시작 --");
+        for (int i = 0; i < userInfos.size(); i++) {
+            if (!checkValue(userInfos.get(i))) {
+                System.out.println("검증에 실패하였습니다. 다시 시도해 주세요");
+                return null;
+            }
+        }
+        uesr = new User()
+        System.out.println("-- 유저 정보 검증 완료 --");
+        System.out.println("-- 유저 등록 완료 --");
+        return user;
+    }
     public static boolean userCheckAndRegist(User user, BufferedReader reader) throws Exception {
         if (!checkUser(user) && !UserService.getUserService().checkNull(user)) {
             System.out.println(" -- 유저 등록 시작 -- ");

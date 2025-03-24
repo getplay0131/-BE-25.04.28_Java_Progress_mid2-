@@ -4,6 +4,7 @@ import model.user.RegularUser;
 import model.user.User;
 import model.user.VIPUser;
 
+import java.io.BufferedReader;
 import java.util.ArrayList;
 
 /*
@@ -96,6 +97,7 @@ public boolean findUserId(User user){
     }
 
     //    * 3. 사용자 등록 메서드 구현
+
     public void userRegistration(User user) {
         if (!checkNull(user)) {
             System.out.println("사용자 등록 실패");
