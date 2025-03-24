@@ -1,6 +1,7 @@
 package model.order;
 
 import model.product.Product;
+import model.user.User;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -133,6 +134,16 @@ public class Order {
         System.out.println("총액 : " + totalPrice + "(원)");
         orderStatToKor(orderStats);
     }
+
+    public boolean findAndMatchUserId(Order order, User user){
+        if (order.getUserId().equals(user.getMemberId())) {
+            System.out.println("유저 아이디 검색 성공");
+            return true;
+        }
+        System.out.println("유저 아이디 검색 실패");
+        return false;
+    }
+
 
 //    9. toString() 메서드 오버라이딩: 주문 정보 출력
 

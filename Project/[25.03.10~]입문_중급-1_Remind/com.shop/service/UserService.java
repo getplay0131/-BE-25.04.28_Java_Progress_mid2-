@@ -136,7 +136,7 @@ public boolean findUserId(User user){
     }
 
     // * 6. 로그인 검증 메서드 구현
-    public void checkLoginData(User user) {
+    public boolean checkLoginData(User user) {
         if (!checkNull(user)) {
             System.out.println("로그인 검증 실패");
         }
@@ -158,8 +158,10 @@ public boolean findUserId(User user){
                 System.out.println("로그인이 완료 되었습니다.");
             } else {
                 System.out.println("아이디 또는 비밀번호를 확인해주세요!");
+                return false;
             }
         }
+        return true;
     }
 
 //    * 8. 회원 등급 업그레이드 메서드 구현

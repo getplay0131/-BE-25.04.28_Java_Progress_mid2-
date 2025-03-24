@@ -145,7 +145,7 @@ public class OrderService {
         if (CartService.getCartService().checkNull(order)) {
             if (price == 0 && !order.isCheckPayed()) {
                 System.out.println("결제가 진행되지 않았습니다.");
-            } else if (price > 0 && order.isCheckPayed()) {
+            } else if (price > 0 && order.isCheckPayed() && price == order.getTotalPrice()) {
                 System.out.println("결제가 완료 되었습니다. 주문 상태가 결제 완료 상태로 변경되었습니다.");
                 order.orderStatChange(order.isCheckPayed());
             }

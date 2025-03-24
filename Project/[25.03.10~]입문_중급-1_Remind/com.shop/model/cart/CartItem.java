@@ -51,6 +51,7 @@ public class CartItem {
         return product.getPrice() * this.stockCount;
     }
 
+
     @Override
     public String toString() {
         return "CartItem{" +
