@@ -12,7 +12,7 @@ package model.user;
  */
 public class VIPUser extends User{
     private final int highAccrualRate = 10;
-    private final int highDiscountPercent = 10;
+    private final int highDiscountPercent = userGrade.VIP.getDiscontPercent();
     private final boolean  isVip = true;
 
     public VIPUser(String memberId, String name, String email, String password, String address) {

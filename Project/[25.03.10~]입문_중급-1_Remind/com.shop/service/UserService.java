@@ -49,41 +49,73 @@ public class UserService {
     public void findArrayDataAndChange(User user) {
         for (int i = 0; i < userList.size(); i++) {
             if (findUserId(user)) {
-            userList.remove(i);
-            userList.add(user);
+                userList.remove(i);
+                userList.add(user);
             }
             System.out.println("사용자 정보 업데이트 완료");
         }
     }
 
-//    * 7. ID로 사용자 검색 메서드 구현
-public boolean findUserId(User user){
+    //    * 7. ID로 사용자 검색 메서드 구현
+    public boolean findUserId(User user) {
         if (!checkNull(user)) {
-        System.out.println("사용자 검색 실패");
+            System.out.println("사용자 검색 실패");
+            return false;
+        } else {
+            for (User user1 : userList) {
+                if (user1.getMemberId().equals(user.getMemberId())) {
+                    return true;
+                }
+            }
+            System.out.println("사용자 아이디 검색 성공 일치 및 확인 완료");
+        }
         return false;
-    } else {
-        for (User user1 : userList) {
-            if (user1.getMemberId().equals(user.getMemberId())) {
-            return true;
+    }
+
+    public boolean findUserId(String id) {
+        if (id.isEmpty()) {
+            System.out.println("입력값 오류");
+            return false;
+        } else {
+            for (User user1 : userList) {
+                if (user1.getMemberId().equals(id)) {
+                    System.out.println("사용자 아이디 검색 성공 일치 및 확인 완료");
+                    return true;
+                }
             }
         }
-        System.out.println("사용자 아이디 검색 성공 일치 및 확인 완료");
+        System.out.println("사용자 아이디 검색 성공 일치 및 확인 실패!");
+        return false;
     }
-    return false;
-}
 
-    public boolean findUserPw(User user){
+    public boolean findUserPw(User user) {
         if (!checkNull(user)) {
             System.out.println("사용자 검색 실패");
             return false;
         } else {
             for (User user1 : userList) {
                 if (user1.getPassword().equals(user.getPassword())) {
-                return true;
+                    return true;
                 }
             }
             System.out.println("사용자 비밀번호 검색 성공 및 일치 확인 완료");
         }
+        return false;
+    }
+
+    public boolean findUserPw(String pw) {
+        if (pw.isEmpty()) {
+            System.out.println("입력값 오류");
+            return false;
+        } else {
+            for (User user1 : userList) {
+                if (user1.getMemberId().equals(pw)) {
+                    System.out.println("사용자 비밀번호 일치 확인 완료");
+                    return true;
+                }
+            }
+        }
+        System.out.println("사용자 비밀번호 확인 실패!");
         return false;
     }
 
@@ -128,12 +160,10 @@ public boolean findUserId(User user){
                 if (findUserId(user)) {
                     userList.remove(i);
                 }
-                System.out.println("사용자 정보 업데이트 완료");
+                System.out.println("사용자 정보 삭제 완료");
             }
             System.out.println("사용자 삭제 실패");
         }
-
-
         System.out.println("사용자 삭제 완료");
     }
 
@@ -166,17 +196,17 @@ public boolean findUserId(User user){
         return true;
     }
 
-//    * 8. 회원 등급 업그레이드 메서드 구현
-    public void userGradeUpgrade(User user){
+    //    * 8. 회원 등급 업그레이드 메서드 구현
+    public void userGradeUpgrade(User user) {
         if (checkNull(user) && user.checkPoint()) {
             findArrayDataAndChange(user);
             if (user instanceof RegularUser regularUser) {
                 VIPUser vipUser = new VIPUser(regularUser.getMemberId(), regularUser.getName(), regularUser.getEmail(),
                         regularUser.getPassword(), regularUser.getAddress());
-                    if (findUserId(user)) {
-                        userDelete(user);
-                        userRegistration(vipUser);
-                    }
+                if (findUserId(user)) {
+                    userDelete(user);
+                    userRegistration(vipUser);
+                }
                 System.out.println(regularUser.getName() + " 님께서 VIP 회원으로 등급이 상승하였습니다.");
             }
         } else {

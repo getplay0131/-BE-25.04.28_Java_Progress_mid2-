@@ -1,4 +1,7 @@
 package exception;
 
-public class ProductNotFoundException {
+public class ProductNotFoundException  extends Exception{
+    public ProductNotFoundException(String message) {
+        super(message);
+    }
 }

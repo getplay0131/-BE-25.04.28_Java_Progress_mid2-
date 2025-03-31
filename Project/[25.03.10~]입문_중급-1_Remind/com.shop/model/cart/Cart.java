@@ -1,5 +1,6 @@
 package model.cart;
 
+import exception.OutOfStockException;
 import model.product.Product;
 import model.user.User;
 
@@ -42,7 +43,11 @@ public class Cart {
         this.userId = userId;
     }
 
-    public void addItem(Product product, int quantity) {
+    public void addItem(Product product, int quantity) throws OutOfStockException {
+        if (product.getStockCount() < quantity) {
+            throw new OutOfStockException("상품 ' " +product.getName() + " ' 의 재고가 부족합니다." );
+        }
+
         for (CartItem item : items) {
             if (item.getProduct().getProductId().equals(product.getProductId())) {
 //                기존 수량에추가

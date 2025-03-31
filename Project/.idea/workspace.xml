@@ -28,9 +28,10 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.ShopConsoleUI.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "F:/[집]자기계발/[집]공부/[집]컴퓨터 공학/[집]웹개발/[집]백엔드/[집][리마인드][자바] 소스 코드/[백] Java/[집][백]인프런 - 김영한의 자바/Project",
+    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>

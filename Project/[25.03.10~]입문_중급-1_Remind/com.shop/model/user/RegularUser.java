@@ -13,7 +13,7 @@ package model.user;
 public class RegularUser extends User {
 
     private final int accrualRate = 5;
-    private final int discountPercent = 3;
+    private final int discountPercent = userGrade.REGULAR.getDiscontPercent();
 
     public RegularUser(String memberId, String name, String email, String password, String address) {
         super(memberId, name, email, password, address);

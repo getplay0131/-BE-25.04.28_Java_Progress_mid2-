@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+import exception.OutOfStockException;
 import model.cart.Cart;
 import model.cart.CartItem;
 import model.order.Order;
@@ -32,7 +33,7 @@ public class ShopConsoleUI {
     public static void main(String[] args) throws Exception {
 //        버퍼 리더 호출
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-
+        User newUser = null;
         boolean isEndRoop = false;
 //        * 3. 메인 메뉴 표시 및 처리 메서드 구현
         while (!isEndRoop) {
@@ -40,22 +41,52 @@ public class ShopConsoleUI {
             String choice = reader.readLine();
 
             //    *TODO : 사용자 선택에 따른 호출 로직 구현하기
-//    System.out.println("1. 사용자 정보 관리");
-//        System.out.println("2. 장바구니 관리");
 //        System.out.println("3. 상품 관리");
 //        System.out.println("4. 주문 내역 관리");
+            if (choice.contains("5")) {
+                System.out.println("쇼핑몰 프로그램을 종료합니다! 오늘도 좋은 하루 보내세요!");
+                isEndRoop = true;
+                break;
+            }
             if (choice.contains("1")) {
 //        사용자 정보 관리
                 System.out.println("로그인 및 사용자 등록 기능으로 이동합니다.");
-
+                System.out.println("회원 가입과 로그인 중 어떤 기능을 사용하시겠습니까?");
+                String choiceUsersWork = reader.readLine();
+                if (choiceUsersWork.contains("회원") || choiceUsersWork.contains("가입")) {
+                    System.out.println("회원 가입을 진행합니다.");
+                    newUser = registNewUser(reader);
+//                    checkUser(newUser);
+                    System.out.println("회원 가입이 완료되었습니다.");
+                } else if (choiceUsersWork.contains("로그인")) {
+                    if (userLoginCheck(userLogin(reader))) {
+                        System.out.println("로그인 완료되었습니다.");
+                    }
+                }
             } else if (choice.contains("2")) {
 //      장바구니 관리
+                System.out.println("장바구니 관리 기능으로 이동합니다.");
+                System.out.println("장바구니 표시와 장바구니 관리중 어떤 기능을 사용하시겠습니까?");
+                String choiceCartWork = reader.readLine();
+                if (choiceCartWork.contains("표시")) {
+                    displayCart();
+                } else if (choiceCartWork.contains("관리")) {
+                    cartManagers(newUser, reader);
+                }
             } else if (choice.contains("3")) {
 //      상품 관리
-
+                System.out.println("상품 관리 기능으로 이동합니다.");
+                System.out.println("목록, 상세 정보 표시 기능 중 어떤 기능을 사용하시겠습니까?");
+                String choiceProductWork = reader.readLine();
+                if (choiceProductWork.contains("목록")) {
+                    productListDisplay();
+                } else if (choiceProductWork.contains("정보")) {
+                    productInfoDisplay();
+                }
             } else if (choice.contains("4")) {
 //      주문 관리
-
+                System.out.println("주문 관리 기능으로 이동합니다.");
+                orderProcessingGuide(newUser);
             } else {
                 System.out.println("올바른 값을 입력해주세요!");
             }
@@ -70,9 +101,9 @@ public class ShopConsoleUI {
         System.out.println("2. 장바구니 관리");
         System.out.println("3. 상품 관리");
         System.out.println("4. 주문 내역 관리");
+        System.out.println("5. 종료");
         System.out.println("-- 원하시는 기능의 번호를 입력해주세요! ex)1번 or 1 --");
     }
-
 
 
 //     ============
@@ -166,7 +197,13 @@ public class ShopConsoleUI {
         String newProductName = reader.readLine();
         productInfos.add(newProductName);
         System.out.println("추가할 가격을 입력해주세요");
-        int newProductPrice = Integer.parseInt(reader.readLine());
+        int newProductPrice = 0;
+        try {
+        newProductPrice = Integer.parseInt(reader.readLine());
+        } catch (NumberFormatException e){
+            System.out.println("숫자 형식으로 입력해주세요");
+            return false;
+        }
         productInfos.add(newProductPrice);
         System.out.println("추가할 카테고리를 입력해주세요");
         String newProductCategory = reader.readLine();
@@ -191,7 +228,12 @@ public class ShopConsoleUI {
 //        for (int i = 0; i < cartItem.getStockCount(); i++) {
 //        cartItem.countReduction();
 //        }
+        try {
         cart.addItem(newProduct, 1);
+        }catch (OutOfStockException e) {
+            System.out.println(e.getMessage());
+            return false;
+        }
 
         System.out.println("== 장바구니 관리 종료 ==");
         return true;
@@ -234,7 +276,32 @@ public class ShopConsoleUI {
 
     //    * 9. 사용자 로그인/등록 메서드 구현
 
-    public User registNewUser(BufferedReader reader) throws Exception{
+    public static User userLogin(BufferedReader reader) throws Exception {
+        System.out.print("아이디를 입력해 주세요 : ");
+        String inputId = reader.readLine();
+        System.out.println();
+        System.out.print("비밀번호를 입력해 주세요 : ");
+        String inputPw = reader.readLine();
+        System.out.println();
+
+
+        if (checkValue(inputId) && checkValue(inputPw)) {
+            System.out.println("사용자 정보 확인 중입니다. 잠시 기다려 주세요.");
+            for (User user : UserService.getUserService().userList) {
+                if (UserService.getUserService().findUserId(inputId) && UserService.getUserService().findUserPw(inputPw)) {
+                    if (user.getMemberId().equals(inputId) && user.getPassword().equals(inputPw)) {
+                        System.out.println("로그인 완료!");
+                        return user;
+
+                    }
+                }
+            }
+        }
+        System.out.println("로그인 실패! 아이디와 비말번호를 다시 확인해 주세요!");
+        return null;
+    }
+
+    public static User registNewUser(BufferedReader reader) throws Exception {
         User newUser = null;
 
         System.out.println(" -- 유저 등록 시작 -- ");
@@ -262,45 +329,20 @@ public class ShopConsoleUI {
                 return null;
             }
         }
-        uesr = new User()
+        newUser = new User(newUserId, newUserName, newUserEmail, newUserPw, newUserAddress);
         System.out.println("-- 유저 정보 검증 완료 --");
         System.out.println("-- 유저 등록 완료 --");
-        return user;
+//        유저 서비스에 사용자 정보 저장
+        UserService.getUserService().userRegistration(newUser);
+        return newUser;
     }
-    public static boolean userCheckAndRegist(User user, BufferedReader reader) throws Exception {
+
+    public static boolean userLoginCheck(User user) {
         if (!checkUser(user) && !UserService.getUserService().checkNull(user)) {
-            System.out.println(" -- 유저 등록 시작 -- ");
-            //        상품 정보 입력 받기
-            ArrayList<Object> userInfos = new ArrayList<>();
-            System.out.println("고객님이 사용할 아이디를 입력해주세요");
-            String newUserId = reader.readLine();
-            userInfos.add(newUserId);
-            System.out.println("고객님의 성함을 입력해주세요");
-            String newUserName = reader.readLine();
-            userInfos.add(newUserName);
-            System.out.println("사용할 이메일을 입력해주세요");
-            String newUserEmail = reader.readLine();
-            userInfos.add(newUserEmail);
-            System.out.println("사용할 비밀번호를 입력해주세요");
-            String newUserPw = reader.readLine();
-            userInfos.add(newUserPw);
-            System.out.println("거주하시는 주소를 입력해주세요");
-            String newUserAddress = reader.readLine();
-            userInfos.add(newUserAddress);
-            System.out.println("-- 유저 정보 검증 시작 --");
-            for (int i = 0; i < userInfos.size(); i++) {
-                if (!checkValue(userInfos.get(i))) {
-                    System.out.println("검증에 실패하였습니다. 다시 시도해 주세요");
-                    return false;
-                }
-            }
-            System.out.println("-- 유저 정보 검증 완료 --");
-            System.out.println("-- 유저 등록 완료 --");
+            System.out.println("유저의 데이터가 없거나, 가입한 회원이 아닙니다.");
+            return false;
         }
 
-        if (checkUser(user)) {
-            System.out.println("로그인 완료");
-        }
         return true;
     }
 
@@ -341,7 +383,7 @@ public class ShopConsoleUI {
     }
 
     public static boolean checkUser(User user) {
-        if (UserService.getUserService().checkNull(user)) {
+        if (!UserService.getUserService().checkNull(user)) {
             System.out.println("입력값이 올바르지 않습니다.");
             return false;
         }

@@ -105,15 +105,15 @@ public class Order {
     }
 
     //    PENDING, PAID, SHIPPED, DELIVERED, CANCELLED;
-    public void orderStatToKor(orderStats oredrStats) {
+    public void orderStatToKor(orderStats orders) {
         System.out.print("주문 상태 : ");
-        if (oredrStats == orderStats.PENDING) {
+        if (orders == orderStats.PENDING) {
             System.out.println("주문 대기중");
-        } else if (oredrStats == orderStats.PAID) {
+        } else if (orders == orderStats.PAID) {
             System.out.println("결제 완료");
-        } else if (oredrStats == orderStats.SHIPPED) {
+        } else if (orders == orderStats.SHIPPED) {
             System.out.println("택배사 전달 대기중");
-        } else if (oredrStats == orderStats.DELIVERED) {
+        } else if (orders == orderStats.DELIVERED) {
             System.out.println("배송중");
         } else {
             System.out.println("취소됨");

@@ -1,5 +1,6 @@
 package service;
 
+import exception.OutOfStockException;
 import model.cart.Cart;
 import model.cart.CartItem;
 import model.user.User;
@@ -97,7 +98,7 @@ public class CartService {
     }
 
     //    * 4. 상품 추가 메서드 구현
-    public void addProduct(Cart cart, CartItem item) {
+    public void addProduct(Cart cart, CartItem item) throws OutOfStockException {
         if (checkNull(cart) && checkNull(item)) {
             if (findUserId(cart)) {
                 cart.addItem(item.getProduct(), 2);
