@@ -17,9 +17,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2v4HPbIR7SsegkLWMo3lXqYZvrn" />
   <component name="ProjectViewState">
     <option name="flattenPackages" value="true" />
@@ -28,9 +28,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AnimalMain1.executor": "Run",
+    "Application.AnimalMain2.executor": "Run",
     "Application.BoxMain.executor": "Run",
     "Application.BoxMain2.executor": "Run",
     "Application.BoxMain3.executor": "Run",
+    "Application.ContainerTest.executor": "Run",
+    "Application.PairTest.executor": "Run",
+    "Application.RawTypeMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid2"
@@ -38,6 +43,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250331.generic.ex2" />
+      <recent name="Progress_250331.generic.animal" />
       <recent name="Progress_250331.generic.ex1" />
     </key>
   </component>
