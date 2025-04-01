@@ -38,6 +38,8 @@
     "Application.BoxMain3.executor": "Run",
     "Application.ContainerTest.executor": "Run",
     "Application.MethodMain1.executor": "Run",
+    "Application.MethodMain2.executor": "Run",
+    "Application.MethodMain3.executor": "Run",
     "Application.PairTest.executor": "Run",
     "Application.RawTypeMain.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -47,6 +49,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250401.generic.ex4" />
       <recent name="Progress_250401.generic.ex3" />
       <recent name="Progress_250331.generic.ex2" />
       <recent name="Progress_250331.generic.animal" />
