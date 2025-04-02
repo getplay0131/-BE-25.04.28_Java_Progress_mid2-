@@ -13,6 +13,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -42,6 +43,11 @@
     "Application.MethodMain3.executor": "Run",
     "Application.PairTest.executor": "Run",
     "Application.RawTypeMain.executor": "Run",
+    "Application.ShuttleTest.executor": "Run",
+    "Application.UnitPrinterTest.executor": "Run",
+    "Application.UnitUtilTest.executor": "Run",
+    "Application.WildcardMain1.executor": "Run",
+    "Application.WildcardMain2.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid2"
@@ -49,11 +55,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250402.generic.test.ex3.unit" />
+      <recent name="Progress_250402.generic.ex5" />
       <recent name="Progress_250401.generic.ex4" />
       <recent name="Progress_250401.generic.ex3" />
       <recent name="Progress_250331.generic.ex2" />
-      <recent name="Progress_250331.generic.animal" />
-      <recent name="Progress_250331.generic.ex1" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
