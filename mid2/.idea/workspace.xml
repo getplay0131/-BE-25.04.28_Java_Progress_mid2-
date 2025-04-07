@@ -34,6 +34,8 @@
     "Application.AnimalHospitalMainV2.executor": "Run",
     "Application.AnimalMain1.executor": "Run",
     "Application.AnimalMain2.executor": "Run",
+    "Application.ArrayMain1.executor": "Run",
+    "Application.ArrayMain2.executor": "Run",
     "Application.BoxMain.executor": "Run",
     "Application.BoxMain2.executor": "Run",
     "Application.BoxMain3.executor": "Run",
@@ -41,6 +43,8 @@
     "Application.MethodMain1.executor": "Run",
     "Application.MethodMain2.executor": "Run",
     "Application.MethodMain3.executor": "Run",
+    "Application.MyArrayList1Main.executor": "Run",
+    "Application.MyArrayList2Main.executor": "Run",
     "Application.PairTest.executor": "Run",
     "Application.RawTypeMain.executor": "Run",
     "Application.ShuttleTest.executor": "Run",
@@ -55,11 +59,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250407.collection.array" />
       <recent name="Progress_250402.generic.test.ex3.unit" />
       <recent name="Progress_250402.generic.ex5" />
       <recent name="Progress_250401.generic.ex4" />
       <recent name="Progress_250401.generic.ex3" />
-      <recent name="Progress_250331.generic.ex2" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
