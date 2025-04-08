@@ -45,6 +45,8 @@
     "Application.MethodMain3.executor": "Run",
     "Application.MyArrayList1Main.executor": "Run",
     "Application.MyArrayList2Main.executor": "Run",
+    "Application.MyArrayList3Main.executor": "Run",
+    "Application.MyArrayListV3BadMain.executor": "Run",
     "Application.PairTest.executor": "Run",
     "Application.RawTypeMain.executor": "Run",
     "Application.ShuttleTest.executor": "Run",
