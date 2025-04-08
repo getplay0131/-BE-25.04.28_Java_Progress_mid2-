@@ -54,6 +54,8 @@ public class MyArrayListV4<E> {
         return object;
     }
 
+    //    경고를 무시하겠다는 뜻
+    @SuppressWarnings("unchecked")
     public E get(int idx) {
         return (E) elementData[idx];
     }
@@ -68,13 +70,14 @@ public class MyArrayListV4<E> {
         return -1;
     }
 
+// 배열 밀기
     public void shiftRightFrom(int index) {
         for (int i = size; i > index; i--) {
             elementData[i] = elementData[i - 1];
         }
     }
 
-
+// 배열 당기기
     public void shiftLeftFrom(int index) {
         for (int i = index; i < size; i++) {
             elementData[i] = elementData[i + 1];
