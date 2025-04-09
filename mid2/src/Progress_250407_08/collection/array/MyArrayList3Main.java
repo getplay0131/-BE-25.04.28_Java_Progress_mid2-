@@ -1,4 +1,4 @@
-package Progress_250407.collection.array;
+package Progress_250407_08.collection.array;
 
 public class MyArrayList3Main {
     public static void main(String[] args) {

@@ -1,8 +1,8 @@
-package Progress_250407.collection.array;
+package Progress_250407_08.collection.array;
 
 public class MyArrayList2Main {
     public static void main(String[] args) {
-        MyArrayListV2 list = new MyArrayListV2(2);
+       MyArrayListV2 list = new MyArrayListV2(2);
         System.out.println(list);
         list.add("a");
         System.out.println(list);

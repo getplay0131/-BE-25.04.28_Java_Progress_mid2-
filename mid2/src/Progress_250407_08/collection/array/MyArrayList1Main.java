@@ -1,8 +1,8 @@
-package Progress_250407.collection.array;
+package Progress_250407_08.collection.array;
 
 public class MyArrayList1Main {
     public static void main(String[] args) {
-        MyArrayListV1 list = new MyArrayListV1();
+       MyArrayListV1 list = new MyArrayListV1();
         System.out.println("== 데이터 추가 == ");
         System.out.println(list);
         list.add("a");

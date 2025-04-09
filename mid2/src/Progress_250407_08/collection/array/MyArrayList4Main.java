@@ -1,10 +1,10 @@
-package Progress_250407.collection.array;
+package Progress_250407_08.collection.array;
 
 import java.util.ArrayList;
 
 public class MyArrayList4Main {
     public static void main(String[] args) {
-        MyArrayListV4<String > strList = new MyArrayListV4<>(2);
+       MyArrayListV4<String > strList = new MyArrayListV4<>(2);
         strList.add("a");
         strList.add("b");
         strList.add("c");
