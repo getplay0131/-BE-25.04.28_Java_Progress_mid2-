@@ -48,6 +48,9 @@
     "Application.MyArrayList3Main.executor": "Run",
     "Application.MyArrayList4Main.executor": "Run",
     "Application.MyArrayListV3BadMain.executor": "Run",
+    "Application.MyLinkedList1Main.executor": "Run",
+    "Application.MyLinkedList2Main.executor": "Run",
+    "Application.MyLinkedList3Main.executor": "Run",
     "Application.NodeMain1.executor": "Run",
     "Application.NodeMain2.executor": "Run",
     "Application.NodeMain3.executor": "Run",
@@ -66,10 +69,10 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="Progress_250409.collection.link" />
+      <recent name="Progress_250407_08.collection.array" />
       <recent name="Progress_250407.collection.array" />
       <recent name="Progress_250402.generic.test.ex3.unit" />
       <recent name="Progress_250402.generic.ex5" />
-      <recent name="Progress_250401.generic.ex4" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
