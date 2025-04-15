@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package-info" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -34,12 +35,16 @@
     "Application.AnimalHospitalMainV2.executor": "Run",
     "Application.AnimalMain1.executor": "Run",
     "Application.AnimalMain2.executor": "Run",
+    "Application.ArrayEx1.executor": "Run",
     "Application.ArrayMain1.executor": "Run",
     "Application.ArrayMain2.executor": "Run",
+    "Application.BatchProcessorMain.executor": "Run",
     "Application.BoxMain.executor": "Run",
     "Application.BoxMain2.executor": "Run",
     "Application.BoxMain3.executor": "Run",
     "Application.ContainerTest.executor": "Run",
+    "Application.ListEx2.executor": "Run",
+    "Application.ListEx3.executor": "Run",
     "Application.MethodMain1.executor": "Run",
     "Application.MethodMain2.executor": "Run",
     "Application.MethodMain3.executor": "Run",
@@ -51,28 +56,35 @@
     "Application.MyLinkedList1Main.executor": "Run",
     "Application.MyLinkedList2Main.executor": "Run",
     "Application.MyLinkedList3Main.executor": "Run",
+    "Application.MyListPerfornanceTest.executor": "Run",
     "Application.NodeMain1.executor": "Run",
     "Application.NodeMain2.executor": "Run",
     "Application.NodeMain3.executor": "Run",
     "Application.PairTest.executor": "Run",
     "Application.RawTypeMain.executor": "Run",
+    "Application.ShoppingCartMain.executor": "Run",
     "Application.ShuttleTest.executor": "Run",
     "Application.UnitPrinterTest.executor": "Run",
     "Application.UnitUtilTest.executor": "Run",
     "Application.WildcardMain1.executor": "Run",
     "Application.WildcardMain2.executor": "Run",
+    "Application.javaListPerfornanceTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "dart.analysis.tool.window.visible": "false",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid2"
+    "last_opened_file_path": "C:/Users/윤승현/Desktop/[노트북]개발자/[노트북]백엔드/[노트북][리마인드][백엔드] 소스 코드/java/인프런/mid2/src/Progress_250415"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\윤승현\Desktop\[노트북]개발자\[노트북]백엔드\[노트북][리마인드][백엔드] 소스 코드\java\인프런\mid2\src\Progress_250415" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Progress_250415.test.ex1" />
+      <recent name="Progress_250415" />
+      <recent name="Progress_250414.collection.list" />
       <recent name="Progress_250409.collection.link" />
       <recent name="Progress_250407_08.collection.array" />
-      <recent name="Progress_250407.collection.array" />
-      <recent name="Progress_250402.generic.test.ex3.unit" />
-      <recent name="Progress_250402.generic.ex5" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
