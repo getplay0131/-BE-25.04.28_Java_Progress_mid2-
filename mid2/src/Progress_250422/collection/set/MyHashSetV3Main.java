@@ -3,7 +3,7 @@ package Progress_250422.collection.set;
 
 public class MyHashSetV3Main {
     public static void main(String[] args) {
-        MyHashSetV3 set = new MyHashSetV3(10);
+        MySet<String> set = new MyHashSetV3(10);
 
         set.add("A");
         set.add("B");
